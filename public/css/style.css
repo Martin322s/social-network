@@ -722,15 +722,9 @@ header.sticky {
 .form-search {
     position: absolute;
     right: -15px;
-    top: 42px;
+    top: -5px;
     width: 300px;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.searched.active .form-search {
     opacity: 1;
-    visibility: visible;
 }
 
 .form-search input {
