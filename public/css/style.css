@@ -1254,8 +1254,6 @@ header.sticky {
     width: 100%;
 }
 
-.activity-meta > h6 a {}
-
 .activitiez > li::before {
     content: "";
     height: 100%;
@@ -1490,7 +1488,7 @@ form button {
 }
 
 .we-video-info > ul li span.like:hover .we-video-info > ul li span.dislike:hover {
-    trnsform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -4014,7 +4012,7 @@ a.forgot-pwd {
 }
 
 .more-options {
-    display: inline-block;
+    display: block;
     float: right;
     position: relative;
 }
@@ -6529,7 +6527,7 @@ a.reply {
     -o-border-radius: 30px;
     border-radius: 30px;
     color: #333;
-    display: inline-block;
+    display: block;
     float: right;
     font-size: 12px;
     font-weight: 300;
@@ -7270,7 +7268,7 @@ ul.offcanvas-menu ul {
     -ms-background-clip: text;
     -o-background-clip: text;
     background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     margin-right: 10px;
     font-size: 60px;
     vertical-align: middle;
@@ -8459,7 +8457,7 @@ a.shopping-cart > i {
     margin-top: 10px;
     border: 3px solid #eee;
     width: 124px !important;
-    display: inline-block;
+    display: block;
     float: right;
     cursor: pointer;
 }
