@@ -175,6 +175,5 @@ export function Friends() {
                 </aside>
             </div>
         </>
-
     );
 };
