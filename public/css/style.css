@@ -1150,6 +1150,7 @@ header.sticky {
 
 .sidebar .widget:last-child {
     margin-bottom: 0;
+    padding-bottom: 30px;
 }
 
 .sidebar .widget > ul {
@@ -1965,6 +1966,7 @@ li.post-comment .comet-avatar {
     margin-top: 20px;
     max-height: 450px;
     position: relative;
+    padding-bottom: 20px;
 }
 
 #people-list figure {

@@ -1,4 +1,5 @@
 import { Footer } from "./components/Footer/Footer";
+import { Friends } from "./components/Friends Sidebar/Friends";
 import { Header } from "./components/Header/Header";
 import { Shortcuts } from "./components/Shortcuts/Shortcuts";
 
@@ -14,6 +15,7 @@ function App() {
                                 <div class="col-lg-3">
                                     <Shortcuts />
                                 </div>
+                                <Friends />
                             </div>
                         </div>
                     </div>
