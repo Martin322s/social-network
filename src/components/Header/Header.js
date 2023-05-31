@@ -17,7 +17,7 @@ export function Header() {
                                 <li><a href="/">More pages</a></li>
                             </ul>
                             <ul className="setting-area">
-                                {/* <li>
+                                <li>
                                     <a href="/" title="Home" data-ripple="">
                                         <i className="ti-search" />
                                     </a>
@@ -29,7 +29,7 @@ export function Header() {
                                             </button>
                                         </form>
                                     </div>
-                                </li> */}
+                                </li>
                             </ul>
                             <div className="user-img">
                                 <img src="images/resources/admin.jpg" alt="" />
