@@ -1,3 +1,7 @@
+import { About } from "../About/About";
+import { ChangePassword } from "../Change Password/ChangePassword";
+import { TimeLine } from "../Time Line/TimeLine";
+
 export function Profile() {
     return (
         <div className="theme-layout">
@@ -123,8 +127,9 @@ export function Profile() {
                                             </div>
                                         </aside>
                                     </div>
-                                    {/* sidebar */}
-                                    {/* centerl meta */}
+                                    {/* <About /> */}
+                                    {/* <TimeLine /> */}
+                                    <ChangePassword />
                                     <div className="col-lg-3">
                                         <aside className="sidebar static">
                                             <div className="widget">
