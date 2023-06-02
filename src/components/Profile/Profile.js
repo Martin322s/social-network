@@ -1,5 +1,7 @@
 import { About } from "../About/About";
 import { ChangePassword } from "../Change Password/ChangePassword";
+import { EditProfile } from "../Edit Profile/EditProfile";
+import { Photos } from "../Profile Photos/Photos";
 import { TimeLine } from "../Time Line/TimeLine";
 
 export function Profile() {
@@ -129,7 +131,9 @@ export function Profile() {
                                     </div>
                                     {/* <About /> */}
                                     {/* <TimeLine /> */}
-                                    <ChangePassword />
+                                    {/* <ChangePassword /> */}
+                                    {/* <EditProfile /> */}
+                                    <Photos />
                                     <div className="col-lg-3">
                                         <aside className="sidebar static">
                                             <div className="widget">
