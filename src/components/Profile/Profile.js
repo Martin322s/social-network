@@ -14,7 +14,7 @@ export function Profile() {
                     </figure>
                     <div className="add-btn">
                         <span>1205 followers</span>
-                        <a href="#" title="" data-ripple="">
+                        <a href="/" title="" data-ripple="">
                             Add Friend
                         </a>
                     </div>
@@ -129,10 +129,10 @@ export function Profile() {
                                             </div>
                                         </aside>
                                     </div>
-                                    {/* <About /> */}
-                                    {/* <TimeLine /> */}
-                                    {/* <ChangePassword /> */}
-                                    {/* <EditProfile /> */}
+                                    <About />
+                                    <TimeLine />
+                                    <ChangePassword />
+                                    <EditProfile />
                                     <Photos />
                                     <div className="col-lg-3">
                                         <aside className="sidebar static">
@@ -140,7 +140,7 @@ export function Profile() {
                                                 <h4 className="widget-title">Your page</h4>
                                                 <div className="your-page">
                                                     <figure>
-                                                        <a title="" href="#">
+                                                        <a title="" href="/">
                                                             <img
                                                                 alt=""
                                                                 src="images/resources/friend-avatar9.jpg"
@@ -148,7 +148,7 @@ export function Profile() {
                                                         </a>
                                                     </figure>
                                                     <div className="page-meta">
-                                                        <a className="underline" title="" href="#">
+                                                        <a className="underline" title="" href="/">
                                                             My page
                                                         </a>
                                                         <span>
@@ -184,14 +184,14 @@ export function Profile() {
                                                                     <i className="ti-heart" />
                                                                     884
                                                                 </span>
-                                                                <a title="weekly-likes" href="#">
+                                                                <a title="weekly-likes" href="/">
                                                                     35 new likes this week
                                                                 </a>
                                                                 <div className="users-thumb-list">
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Anderw"
                                                                     >
                                                                         <img
@@ -202,7 +202,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="frank"
                                                                     >
                                                                         <img
@@ -213,7 +213,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Sara"
                                                                     >
                                                                         <img
@@ -224,7 +224,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Amy"
                                                                     >
                                                                         <img
@@ -235,7 +235,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Ema"
                                                                     >
                                                                         <img
@@ -246,7 +246,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Sophie"
                                                                     >
                                                                         <img
@@ -257,7 +257,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Maria"
                                                                     >
                                                                         <img
@@ -272,14 +272,14 @@ export function Profile() {
                                                                     <i className="ti-eye" />
                                                                     445
                                                                 </span>
-                                                                <a title="weekly-likes" href="#">
+                                                                <a title="weekly-likes" href="/">
                                                                     440 new views this week
                                                                 </a>
                                                                 <div className="users-thumb-list">
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Anderw"
                                                                     >
                                                                         <img
@@ -290,7 +290,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="frank"
                                                                     >
                                                                         <img
@@ -301,7 +301,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Sara"
                                                                     >
                                                                         <img
@@ -312,7 +312,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Amy"
                                                                     >
                                                                         <img
@@ -323,7 +323,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Ema"
                                                                     >
                                                                         <img
@@ -334,7 +334,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Sophie"
                                                                     >
                                                                         <img
@@ -345,7 +345,7 @@ export function Profile() {
                                                                     <a
                                                                         data-toggle="tooltip"
                                                                         title=""
-                                                                        href="#"
+                                                                        href="/"
                                                                         data-original-title="Maria"
                                                                     >
                                                                         <img
@@ -375,7 +375,7 @@ export function Profile() {
                                                                     Kelly Bill
                                                                 </a>
                                                             </h4>
-                                                            <a href="#" title="" className="underline">
+                                                            <a href="/" title="" className="underline">
                                                                 Add Friend
                                                             </a>
                                                         </div>
@@ -393,7 +393,7 @@ export function Profile() {
                                                                     Issabel
                                                                 </a>
                                                             </h4>
-                                                            <a href="#" title="" className="underline">
+                                                            <a href="/" title="" className="underline">
                                                                 Add Friend
                                                             </a>
                                                         </div>
@@ -411,7 +411,7 @@ export function Profile() {
                                                                     Andrew
                                                                 </a>
                                                             </h4>
-                                                            <a href="#" title="" className="underline">
+                                                            <a href="/" title="" className="underline">
                                                                 Add Friend
                                                             </a>
                                                         </div>
@@ -429,7 +429,7 @@ export function Profile() {
                                                                     Sophia
                                                                 </a>
                                                             </h4>
-                                                            <a href="#" title="" className="underline">
+                                                            <a href="/" title="" className="underline">
                                                                 Add Friend
                                                             </a>
                                                         </div>
@@ -447,7 +447,7 @@ export function Profile() {
                                                                     Allen
                                                                 </a>
                                                             </h4>
-                                                            <a href="#" title="" className="underline">
+                                                            <a href="/" title="" className="underline">
                                                                 Add Friend
                                                             </a>
                                                         </div>

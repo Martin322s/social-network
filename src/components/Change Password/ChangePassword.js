@@ -29,7 +29,7 @@ export function ChangePassword() {
                             </label>
                             <i className="mtrl-select" />
                         </div>
-                        <a className="forgot-pwd underline" title="" href="#">
+                        <a className="forgot-pwd underline" title="" href="/">
                             Forgot Password?
                         </a>
                         <div className="submit-btns">

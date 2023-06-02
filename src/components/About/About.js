@@ -109,7 +109,7 @@ export function About() {
                                 role="tabpanel"
                             >
                                 <div>
-                                    <a href="#" title="">
+                                    <a href="/" title="">
                                         Envato
                                     </a>
                                     <p>

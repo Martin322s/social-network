@@ -30,14 +30,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     unfriend
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     add friend
                                                 </a>
                                             </div>
@@ -58,14 +58,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>tv actresses</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     unfriend
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     add friend
                                                 </a>
                                             </div>
@@ -86,14 +86,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>work at IBM</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     unfriend
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     add friend
                                                 </a>
                                             </div>
@@ -114,14 +114,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>Student</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     unfriend
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     add friend
                                                 </a>
                                             </div>
@@ -142,14 +142,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     unfriend
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     add friend
                                                 </a>
                                             </div>
@@ -170,14 +170,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>Study in university</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     unfriend
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     add friend
                                                 </a>
                                             </div>
@@ -198,14 +198,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>work as dancers</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     unfriend
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     add friend
                                                 </a>
                                             </div>
@@ -226,14 +226,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>personal business</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     unfriend
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     add friend
                                                 </a>
                                             </div>
@@ -261,14 +261,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     delete Request
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     Confirm
                                                 </a>
                                             </div>
@@ -289,14 +289,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     delete Request
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     Confirm
                                                 </a>
                                             </div>
@@ -317,14 +317,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     delete Request
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     Confirm
                                                 </a>
                                             </div>
@@ -345,14 +345,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     delete Request
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     Confirm
                                                 </a>
                                             </div>
@@ -373,14 +373,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     delete Request
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     Confirm
                                                 </a>
                                             </div>
@@ -401,14 +401,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     delete Request
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     Confirm
                                                 </a>
                                             </div>
@@ -429,14 +429,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     delete Request
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     Confirm
                                                 </a>
                                             </div>
@@ -457,14 +457,14 @@ export function Friends() {
                                                 </h4>
                                                 <span>ftv model</span>
                                                 <a
-                                                    href="#"
+                                                    href="/"
                                                     title=""
                                                     className="add-butn more-action"
                                                     data-ripple=""
                                                 >
                                                     delete Request
                                                 </a>
-                                                <a href="#" title="" className="add-butn" data-ripple="">
+                                                <a href="/" title="" className="add-butn" data-ripple="">
                                                     Confirm
                                                 </a>
                                             </div>

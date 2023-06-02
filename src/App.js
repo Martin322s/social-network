@@ -12,12 +12,12 @@ function App() {
     return (
         <>
             <Header />
-            {/* <Home />
+            <Home />
             <Login />
             <Register />
             <Error />
             <Contact />
-            <Friends /> */}
+            <Friends />
             <Profile />
             <Footer />
         </>

@@ -67,7 +67,7 @@ export function TimeLine() {
                             <div className="description">
                                 <p>
                                     World's most beautiful car in Curabitur{" "}
-                                    <a href="#" title="">
+                                    <a href="/" title="">
                                         #test drive booking !
                                     </a>{" "}
                                     the most beatuiful car available in america and the saudia arabia,
@@ -76,7 +76,7 @@ export function TimeLine() {
                             </div>
                             <div className="post-meta">
                                 <div className="linked-image align-left">
-                                    <a href="#" title="">
+                                    <a href="/" title="">
                                         <img src="images/resources/page1.jpg" alt="" />
                                     </a>
                                 </div>
@@ -86,7 +86,7 @@ export function TimeLine() {
                                         Lorem ipsum dolor sit amet, consectetur ipisicing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua...{" "}
                                     </p>
-                                    <a href="#" title="">
+                                    <a href="/" title="">
                                         www.sample.com
                                     </a>
                                 </div>
@@ -131,56 +131,56 @@ export function TimeLine() {
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-html5" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-facebook" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-google-plus" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-twitter" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-css3" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-instagram" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-dribbble" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-pinterest" />
                                                         </a>
                                                     </div>
@@ -250,56 +250,56 @@ export function TimeLine() {
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-html5" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-facebook" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-google-plus" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-twitter" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-css3" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-instagram" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-dribbble" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-pinterest" />
                                                         </a>
                                                     </div>
@@ -311,7 +311,7 @@ export function TimeLine() {
                                 <div className="description">
                                     <p>
                                         Curabitur world's most beautiful car in{" "}
-                                        <a href="#" title="">
+                                        <a href="/" title="">
                                             #test drive booking !
                                         </a>{" "}
                                         the most beatuiful car available in america and the saudia
@@ -334,7 +334,7 @@ export function TimeLine() {
                                                 </a>
                                             </h5>
                                             <span>1 year ago</span>
-                                            <a className="we-reply" href="#" title="Reply">
+                                            <a className="we-reply" href="/" title="Reply">
                                                 <i className="fa fa-reply" />
                                             </a>
                                         </div>
@@ -357,14 +357,14 @@ export function TimeLine() {
                                                         </a>
                                                     </h5>
                                                     <span>1 month ago</span>
-                                                    <a className="we-reply" href="#" title="Reply">
+                                                    <a className="we-reply" href="/" title="Reply">
                                                         <i className="fa fa-reply" />
                                                     </a>
                                                 </div>
                                                 <p>
                                                     yes, really very awesome car i see the features of this
                                                     car in the official website of{" "}
-                                                    <a href="#" title="">
+                                                    <a href="/" title="">
                                                         #Mercedes-Benz
                                                     </a>{" "}
                                                     and really impressed :-)
@@ -383,7 +383,7 @@ export function TimeLine() {
                                                         </a>
                                                     </h5>
                                                     <span>16 days ago</span>
-                                                    <a className="we-reply" href="#" title="Reply">
+                                                    <a className="we-reply" href="/" title="Reply">
                                                         <i className="fa fa-reply" />
                                                     </a>
                                                 </div>
@@ -408,7 +408,7 @@ export function TimeLine() {
                                                 </a>
                                             </h5>
                                             <span>1 week ago</span>
-                                            <a className="we-reply" href="#" title="Reply">
+                                            <a className="we-reply" href="/" title="Reply">
                                                 <i className="fa fa-reply" />
                                             </a>
                                         </div>
@@ -421,7 +421,7 @@ export function TimeLine() {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#" title="" className="showmore underline">
+                                    <a href="/" title="" className="showmore underline">
                                         more comments
                                     </a>
                                 </li>
@@ -478,6 +478,7 @@ export function TimeLine() {
                                     webkitallowfullscreen=""
                                     mozallowfullscreen=""
                                     allowFullScreen=""
+                                    title="#"
                                 />
                                 <div className="we-video-info">
                                     <ul>
@@ -520,56 +521,56 @@ export function TimeLine() {
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-html5" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-facebook" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-google-plus" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-twitter" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-css3" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-instagram" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-dribbble" />
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <div className="rotater">
                                                     <div className="btn btn-icon">
-                                                        <a href="#" title="">
+                                                        <a href="/" title="">
                                                             <i className="fa fa-pinterest" />
                                                         </a>
                                                     </div>
@@ -581,7 +582,7 @@ export function TimeLine() {
                                 <div className="description">
                                     <p>
                                         Lonely Cat Enjoying in Summer Curabitur{" "}
-                                        <a href="#" title="">
+                                        <a href="/" title="">
                                             #mypage
                                         </a>{" "}
                                         ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
@@ -606,7 +607,7 @@ export function TimeLine() {
                                                 </a>
                                             </h5>
                                             <span>1 year ago</span>
-                                            <a className="we-reply" href="#" title="Reply">
+                                            <a className="we-reply" href="/" title="Reply">
                                                 <i className="fa fa-reply" />
                                             </a>
                                         </div>
@@ -629,7 +630,7 @@ export function TimeLine() {
                                                 </a>
                                             </h5>
                                             <span>1 week ago</span>
-                                            <a className="we-reply" href="#" title="Reply">
+                                            <a className="we-reply" href="/" title="Reply">
                                                 <i className="fa fa-reply" />
                                             </a>
                                         </div>
@@ -641,7 +642,7 @@ export function TimeLine() {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#" title="" className="showmore underline">
+                                    <a href="/" title="" className="showmore underline">
                                         more comments
                                     </a>
                                 </li>
