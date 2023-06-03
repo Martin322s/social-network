@@ -3,6 +3,7 @@ import { ChangePassword } from "../Change Password/ChangePassword";
 import { EditProfile } from "../Edit Profile/EditProfile";
 import { Photos } from "../Profile Photos/Photos";
 import { TimeLine } from "../Time Line/TimeLine";
+import { Friends } from "../Profile Friends/Friends";
 
 export function Profile() {
     return (
@@ -134,6 +135,7 @@ export function Profile() {
                                     <ChangePassword />
                                     <EditProfile />
                                     <Photos />
+                                    <Friends />
                                     <div className="col-lg-3">
                                         <aside className="sidebar static">
                                             <div className="widget">
