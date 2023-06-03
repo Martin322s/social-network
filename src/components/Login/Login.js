@@ -25,7 +25,7 @@ export function Login() {
                                 <h2 className="log-title">Login</h2>
                                 <p>
                                     Don't use Winku Yet?{" "}
-                                    <a href="#" title="">
+                                    <a href="/" title="">
                                         Join now
                                     </a>
                                 </p>

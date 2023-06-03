@@ -89,7 +89,7 @@ export function Posts() {
                                 <div className="description">
                                     <p>
                                         World's most beautiful car in Curabitur{" "}
-                                        <a href="#" title="">
+                                        <a href="/" title="">
                                             #test drive booking!
                                         </a>{" "}
                                         the most beatuiful car available in america and the saudia
@@ -160,6 +160,7 @@ export function Posts() {
                                     webkitallowfullscreen=""
                                     mozallowfullscreen=""
                                     allowFullScreen=""
+                                    title="#"
                                 />
                                 <div className="we-video-info">
                                     <ul>
@@ -198,7 +199,7 @@ export function Posts() {
                                 <div className="description">
                                     <p>
                                         Lonely Cat Enjoying in Summer Curabitur{" "}
-                                        <a href="#" title="">
+                                        <a href="/" title="">
                                             #mypage
                                         </a>{" "}
                                         ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.

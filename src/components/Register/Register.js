@@ -92,7 +92,7 @@ export function Register() {
                                             Accept Terms &amp; Conditions ?
                                         </label>
                                     </div>
-                                    <a href="#" title="" className="already-have">
+                                    <a href="/" title="" className="already-have">
                                         Already have an account
                                     </a>
                                     <div className="submit-btns">
