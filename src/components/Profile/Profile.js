@@ -51,7 +51,7 @@ export function Profile() {
                                             <span>Group Admin</span>
                                         </li>
                                         <li>
-                                            <a className="" href="/profile" title="" data-ripple="">
+                                            <a className="" href="/profile/timeline" title="" data-ripple="">
                                                 time line
                                             </a>
                                             <a
@@ -71,7 +71,6 @@ export function Profile() {
                                                 Friends
                                             </a>
                                             <a
-                                                className="active"
                                                 href="/profile/about"
                                                 title=""
                                                 data-ripple=""
@@ -113,242 +112,14 @@ export function Profile() {
                                             </div>
                                         </aside>
                                     </div>
-                                    <TimeLine />
-                                    <Routes>
-                                        <Route path="/about" element={<About />} />
-                                        <Route path="/profile" element={<TimeLine />} />
-                                        <Route path="/profile/photos" element={<Photos />} />
-                                        {/*
-                                        <ChangePassword />
-                                        <EditProfile />
-                                        
-                                        <Friends /> */}
-                                    </Routes>
+                                    {/* <TimeLine />
+                                    <Friends />
+                                    <ChangePassword />
+                                    <EditProfile />
+                                    <Photos /> */}
+                                    <About />
                                     <div className="col-lg-3">
                                         <aside className="sidebar static">
-                                            <div className="widget">
-                                                <h4 className="widget-title">Your page</h4>
-                                                <div className="your-page">
-                                                    <figure>
-                                                        <a title="" href="/">
-                                                            <img
-                                                                alt=""
-                                                                src="images/resources/friend-avatar9.jpg"
-                                                            />
-                                                        </a>
-                                                    </figure>
-                                                    <div className="page-meta">
-                                                        <a className="underline" title="" href="/">
-                                                            My page
-                                                        </a>
-                                                        <span>
-                                                            <i className="ti-comment" />
-                                                            Messages <em>9</em>
-                                                        </span>
-                                                        <span>
-                                                            <i className="ti-bell" />
-                                                            Notifications <em>2</em>
-                                                        </span>
-                                                    </div>
-                                                    <div className="page-likes">
-                                                        <ul className="nav nav-tabs likes-btn">
-                                                            <li className="nav-item">
-                                                                <a
-                                                                    data-toggle="tab"
-                                                                    href="#link1"
-                                                                    className="active"
-                                                                >
-                                                                    likes
-                                                                </a>
-                                                            </li>
-                                                            <li className="nav-item">
-                                                                <a data-toggle="tab" href="#link2" className="">
-                                                                    views
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        {/* Tab panes */}
-                                                        <div className="tab-content">
-                                                            <div id="link1" className="tab-pane active fade show">
-                                                                <span>
-                                                                    <i className="ti-heart" />
-                                                                    884
-                                                                </span>
-                                                                <a title="weekly-likes" href="/">
-                                                                    35 new likes this week
-                                                                </a>
-                                                                <div className="users-thumb-list">
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Anderw"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-1.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="frank"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-2.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Sara"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-3.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Amy"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-4.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Ema"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-5.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Sophie"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-6.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Maria"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-7.jpg"
-                                                                        />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div id="link2" className="tab-pane fade">
-                                                                <span>
-                                                                    <i className="ti-eye" />
-                                                                    445
-                                                                </span>
-                                                                <a title="weekly-likes" href="/">
-                                                                    440 new views this week
-                                                                </a>
-                                                                <div className="users-thumb-list">
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Anderw"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-1.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="frank"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-2.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Sara"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-3.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Amy"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-4.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Ema"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-5.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Sophie"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-6.jpg"
-                                                                        />
-                                                                    </a>
-                                                                    <a
-                                                                        data-toggle="tooltip"
-                                                                        title=""
-                                                                        href="/"
-                                                                        data-original-title="Maria"
-                                                                    >
-                                                                        <img
-                                                                            alt=""
-                                                                            src="images/resources/userlist-7.jpg"
-                                                                        />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div className="widget stick-widget">
                                                 <h4 className="widget-title">Who's follownig</h4>
                                                 <ul className="followers">

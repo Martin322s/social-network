@@ -240,9 +240,6 @@ export function Friends() {
                                         </div>
                                     </li>
                                 </ul>
-                                <div className="lodmore">
-                                    <button className="btn-view btn-load-more" />
-                                </div>
                             </div>
                             <div className="tab-pane fade" id="frends-req">
                                 <ul className="nearby-contct">
