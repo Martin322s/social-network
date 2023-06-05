@@ -51,12 +51,12 @@ export function Profile() {
                                             <span>Group Admin</span>
                                         </li>
                                         <li>
-                                            <a className="" href="time-line.html" title="" data-ripple="">
+                                            <a className="" href="/profile" title="" data-ripple="">
                                                 time line
                                             </a>
                                             <a
                                                 className=""
-                                                href="timeline-photos.html"
+                                                href="/profile/photos"
                                                 title=""
                                                 data-ripple=""
                                             >
@@ -113,12 +113,15 @@ export function Profile() {
                                             </div>
                                         </aside>
                                     </div>
+                                    <TimeLine />
                                     <Routes>
-                                        
-                                        {/* <TimeLine />
+                                        <Route path="/about" element={<About />} />
+                                        <Route path="/profile" element={<TimeLine />} />
+                                        <Route path="/profile/photos" element={<Photos />} />
+                                        {/*
                                         <ChangePassword />
                                         <EditProfile />
-                                        <Photos />
+                                        
                                         <Friends /> */}
                                     </Routes>
                                     <div className="col-lg-3">
