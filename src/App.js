@@ -7,6 +7,7 @@ import { Home } from "./components/Home/Home";
 import { Login } from "./components/Login/Login";
 import { Profile } from "./components/Profile/Profile";
 import { Register } from "./components/Register/Register";
+import { About } from "./components/About/About";
 
 function App() {
     return (
@@ -17,8 +18,9 @@ function App() {
                 <Route path="/users/login" element={<Login />} />
                 <Route path="/users/register" element={<Register />} />
                 <Route path="/users/logout" element={<Home />} />
-                <Route path="/profile/:userId" element={<Profile />} />
+                <Route path="/profile" element={<Profile />} />
                 <Route path="/contacts" element={<Contact />} />
+                <Route path="/profile/about" element={<About />} />
                 <Route path="*" element={<Error />} />
             </Routes>
             <Footer />

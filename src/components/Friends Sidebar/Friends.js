@@ -15,18 +15,6 @@ export function Friends() {
                                 <a href="/" className="underline">
                                     My page
                                 </a>
-                                <span>
-                                    <i className="ti-comment" />
-                                    <a href="insight.html">
-                                        Messages
-                                    </a>
-                                </span>
-                                <span>
-                                    <i className="ti-bell" />
-                                    <a href="insight.html">
-                                        Notifications
-                                    </a>
-                                </span>
                             </div>
                         </div>
                     </div>

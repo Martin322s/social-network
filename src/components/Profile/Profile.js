@@ -4,6 +4,7 @@ import { EditProfile } from "../Edit Profile/EditProfile";
 import { Photos } from "../Profile Photos/Photos";
 import { TimeLine } from "../Time Line/TimeLine";
 import { Friends } from "../Profile Friends/Friends";
+import { Routes, Route } from "react-router-dom";
 
 export function Profile() {
     return (
@@ -71,11 +72,11 @@ export function Profile() {
                                             </a>
                                             <a
                                                 className="active"
-                                                href="about.html"
+                                                href="/profile/about"
                                                 title=""
                                                 data-ripple=""
                                             >
-                                                about
+                                                About
                                             </a>
                                         </li>
                                     </ul>
@@ -103,24 +104,6 @@ export function Profile() {
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <i className="ti-mouse-alt" />
-                                                        <a title="" href="edit-work-eductation.html">
-                                                            Education &amp; Work
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <i className="ti-heart" />
-                                                        <a title="" href="edit-interest.html">
-                                                            My interests
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <i className="ti-settings" />
-                                                        <a title="" href="edit-account-setting.html">
-                                                            account setting
-                                                        </a>
-                                                    </li>
-                                                    <li>
                                                         <i className="ti-lock" />
                                                         <a title="" href="edit-password.html">
                                                             change password
@@ -130,12 +113,14 @@ export function Profile() {
                                             </div>
                                         </aside>
                                     </div>
-                                    <About />
-                                    <TimeLine />
-                                    <ChangePassword />
-                                    <EditProfile />
-                                    <Photos />
-                                    <Friends />
+                                    <Routes>
+                                        
+                                        {/* <TimeLine />
+                                        <ChangePassword />
+                                        <EditProfile />
+                                        <Photos />
+                                        <Friends /> */}
+                                    </Routes>
                                     <div className="col-lg-3">
                                         <aside className="sidebar static">
                                             <div className="widget">
@@ -456,7 +441,6 @@ export function Profile() {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            {/* who's following */}
                                         </aside>
                                     </div>
                                 </div>

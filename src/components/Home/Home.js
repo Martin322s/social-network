@@ -10,7 +10,7 @@ export function Home() {
                     <div className="col-lg-12">
                         <div className="row" id="page-contents">
                             <div className="col-lg-3">
-                                <Shortcuts />
+                            <Shortcuts />
                             </div>
                             <Posts />
                             <Friends />

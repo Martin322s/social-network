@@ -6,7 +6,7 @@ export function Shortcuts() {
                 <ul className="naves">
                     <li>
                         <i className="ti-mouse-alt" />
-                        <a href="inbox.html">Inbox</a>
+                        <a href="inbox.html">Home</a>
                     </li>
                     <li>
                         <i className="ti-user" />
@@ -18,15 +18,15 @@ export function Shortcuts() {
                     </li>
                     <li>
                         <i className="ti-video-camera" />
-                        <a href="timeline-videos.html">Videos</a>
+                        <a href="timeline-videos.html">Timeline</a>
                     </li>
                     <li>
-                        <i className="ti-comments-smiley" />
-                        <a href="messages.html">Messages</a>
+                        <i className="fas fa-door-open" />
+                        <a href="messages.html">Login</a>
                     </li>
                     <li>
-                        <i className="ti-bell" />
-                        <a href="notifications.html">Notifications</a>
+                        <i className="fas fa-user-plus" />
+                        <a href="notifications.html">Register</a>
                     </li>
                     <li>
                         <i className="ti-power-off" />

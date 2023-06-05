@@ -32,7 +32,7 @@ export function Header() {
                                 </li>
                             </ul>
                             <div className="user-img">
-                                <a href="/">
+                                <a href="/profile">
                                     <img src="images/resources/admin.jpg" alt="profile" />
                                 </a>
                             </div>
