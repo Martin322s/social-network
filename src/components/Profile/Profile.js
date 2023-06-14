@@ -64,7 +64,7 @@ export function Profile() {
                                             </a>
                                             <a
                                                 className=""
-                                                href="timeline-friends.html"
+                                                href="/profile/friends"
                                                 title=""
                                                 data-ripple=""
                                             >
@@ -112,12 +112,19 @@ export function Profile() {
                                             </div>
                                         </aside>
                                     </div>
-                                    {/* <TimeLine />
+                                    {/* 
+                                    <TimeLine />
                                     <Friends />
                                     <ChangePassword />
                                     <EditProfile />
-                                    <Photos /> */}
                                     <About />
+                                    <Photos /> */}
+                                    <Routes>
+                                        <Route path="timeline" element={<TimeLine />} />
+                                        <Route path="about" element={<About />} />
+                                        <Route path="photos" element={<Photos />} />
+                                        <Route path="friends" element={<Friends />} />
+                                    </Routes>
                                     <div className="col-lg-3">
                                         <aside className="sidebar static">
                                             <div className="widget stick-widget">
