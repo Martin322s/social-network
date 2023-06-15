@@ -1,3 +1,4 @@
+import { Friends } from "../Friends/Friends";
 import { Shortcuts } from "../Shortcuts/Shortcuts";
 
 export function Home() {
@@ -9,6 +10,7 @@ export function Home() {
                         <div className="row" id="page-contents">
                             <div className="col-lg-3">
                                 <Shortcuts />
+                                <Friends />
                             </div>
                         </div>
                     </div>
