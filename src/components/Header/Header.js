@@ -9,7 +9,7 @@ export function Header() {
                     <div className="topbar stick">
                         <div className="logo">
                             <a href="/">
-                                <img src="images/logo.png" alt="logo" />
+                                <img src="/images/logo.png" alt="logo" />
                             </a>
                         </div>
                         <div className="top-area">
@@ -34,7 +34,7 @@ export function Header() {
                             </ul>
                             <div className="user-img">
                                 <a href="/profile">
-                                    <img src="images/resources/admin.jpg" alt="profile" />
+                                    <img src="/images/resources/admin.jpg" alt="profile" />
                                 </a>
                             </div>
                         </div>

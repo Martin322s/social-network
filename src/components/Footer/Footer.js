@@ -83,7 +83,6 @@ export function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2 col-md-4"></div>
                 </div>
             </div>
         </footer>
