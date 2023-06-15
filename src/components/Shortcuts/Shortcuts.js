@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Shortcuts() {
     return (
-        <aside className="sidebar static">
+        <aside className="sidebar static shortcuts">
             <div className="widget">
                 <h4 className="widget-title">Shortcuts</h4>
                 <ul className="naves">

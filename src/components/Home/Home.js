@@ -8,10 +8,10 @@ export function Home() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="row" id="page-contents">
-                            <div className="col-lg-3">
-                                <Shortcuts />
-                                <Friends />
-                            </div>
+                                <section className="sidebars">
+                                    <Shortcuts />
+                                    <Friends />
+                                </section>
                         </div>
                     </div>
                 </div>
