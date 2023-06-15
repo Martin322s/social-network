@@ -1,5 +1,6 @@
 import { Friends } from "../Friends/Friends";
 import { Shortcuts } from "../Shortcuts/Shortcuts";
+import { TimeLine } from "../TimeLine/TimeLine";
 
 export function Home() {
     return (
@@ -10,6 +11,7 @@ export function Home() {
                         <div className="row" id="page-contents">
                                 <section className="sidebars">
                                     <Shortcuts />
+                                    <TimeLine />
                                     <Friends />
                                 </section>
                         </div>
