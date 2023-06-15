@@ -23,58 +23,91 @@ export function Register() {
                         <div className="login-reg-bg">
                             <div className="log-reg-area sign">
                                 <h2 className="log-title">Register</h2>
-                                <form method="post">
+                                <form>
                                     <div className="form-group">
-                                        <input type="text" required="required" />
-                                        <label className="control-label" htmlFor="input">
-                                            First &amp; Last Name
+                                        <input 
+                                            type="text" 
+                                            required="required" 
+                                            id="firstName" 
+                                            name="firstName"
+                                        />
+                                        <label className="control-label" htmlFor="firstName">
+                                            First Name
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" required="required" />
-                                        <label className="control-label" htmlFor="input">
+                                        <input 
+                                            type="text" 
+                                            required="required" 
+                                            id="lastName" 
+                                            name="lastName" 
+                                        />
+                                        <label className="control-label" htmlFor="lastName">
+                                            Last Name
+                                        </label>
+                                        <i className="mtrl-select" />
+                                    </div>
+                                    <div className="form-group">
+                                        <input 
+                                            type="text" 
+                                            required="required" 
+                                            id="username" 
+                                            name="username" 
+                                        />
+                                        <label className="control-label" htmlFor="username">
                                             Username
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
                                     <div className="form-group">
-                                        <input type="password" required="required" />
-                                        <label className="control-label" htmlFor="input">
+                                        <input 
+                                            type="password" 
+                                            required="required" 
+                                            id="password" 
+                                            name="password" 
+                                        />
+                                        <label className="control-label" htmlFor="password">
                                             Password
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
                                     <div className="form-group">
-                                        <input type="password" required="required" />
-                                        <label className="control-label" htmlFor="input">
+                                        <input 
+                                            type="password" 
+                                            required="required" 
+                                            id="repassword" 
+                                            name="repassword" 
+                                        />
+                                        <label className="control-label" htmlFor="repassword">
                                             Confirm password
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
                                     <div className="form-radio">
                                         <div className="radio">
-                                            <label>
+                                            <label htmlFor="gender">
                                                 <input
                                                     type="radio"
                                                     name="radio"
                                                     defaultChecked="checked"
+                                                    id="gender"
                                                 />
                                                 <i className="check-box" />
                                                 Male
                                             </label>
                                         </div>
                                         <div className="radio">
-                                            <label>
-                                                <input type="radio" name="radio" />
+                                            <label htmlFor="gender">
+                                                <input type="radio" name="radio" id="gender"/>
                                                 <i className="check-box" />
                                                 Female
                                             </label>
                                         </div>
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" required="required" />
-                                        <label className="control-label" htmlFor="input">
+                                        <input type="text" required="required" id="email" name="email" />
+                                        <label className="control-label" htmlFor="email">
                                             <a
                                                 href="https://wpkixx.com/cdn-cgi/l/email-protection"
                                                 className="__cf_email__"
