@@ -1,5 +1,4 @@
 import "./styles/header.css";
-import { Link } from "react-router-dom";
 
 export function Header() {
     return (
@@ -13,13 +12,6 @@ export function Header() {
                             </a>
                         </div>
                         <div className="top-area">
-                            <ul className="main-menu">
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/">Timeline</Link></li>
-                                <li><Link to="/users/login">Login</Link></li>
-                                <li><Link to="/users/register">Sign In</Link></li>
-                                <li><Link to="/users/logout">Logout</Link></li>
-                            </ul>
                             <ul className="setting-area">
                                 <li>
                                     <div className="searched">

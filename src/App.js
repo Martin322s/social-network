@@ -4,6 +4,7 @@ import { Header } from "./components/Header/Header";
 import { Login } from "./components/Login/Login";
 import { Register } from "./components/Register/Register";
 import { Home } from "./components/Home/Home";
+import { Error } from "./components/Error Page/ErrorPage";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/users/login" element={<Login />} />
                 <Route path="/users/register" element={<Register />} />
+                <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
         </>
