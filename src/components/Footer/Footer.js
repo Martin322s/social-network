@@ -1,3 +1,6 @@
+import "./styles/footer.css";
+import { Link } from "react-router-dom";
+
 export function Footer() {
     return (
         <footer>
@@ -7,23 +10,24 @@ export function Footer() {
                         <div className="widget">
                             <div className="foot-logo">
                                 <div className="logo">
-                                    <a href="index-2.html">
-                                        <img src="images/logo.png" alt="logo" />
-                                    </a>
+                                    <Link to="/">
+                                        <img src="/images/logo.png" alt="logo" />
+                                    </Link>
                                 </div>
                                 <p>
-                                    The trio took this simple idea and built it into the world's
-                                    leading carpooling platform.
+                                    Embrace the Power of Connection on Winku: Where Friendships
+                                    Flourish, Ideas Spark, and Communities Thrive!
                                 </p>
                             </div>
                             <ul className="location">
+                                <li>All rights reserved &copy; by Martin Sofroniev</li>
                                 <li>
                                     <i className="ti-map-alt" />
-                                    <p>33 new montgomery st.750 san francisco, CA USA 94105.</p>
+                                    <p>3400, Montana, Bulgaria - Neofit Bozveli 40 Str.</p>
                                 </li>
                                 <li>
                                     <i className="ti-mobile" />
-                                    <p>+1-56-346 345</p>
+                                    <p>+359 87 704 0853</p>
                                 </li>
                             </ul>
                         </div>
@@ -36,21 +40,21 @@ export function Footer() {
                             <ul className="list-style">
                                 <li>
                                     <i className="fa fa-facebook-square" />
-                                    <a href="https://web.facebook.com/shopcircut/">
+                                    <Link to="https://www.facebook.com/profile.php?id=100009733451214">
                                         Facebook
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <i className="fa fa-twitter-square" />
-                                    <a href="https://twitter.com/login?lang=en">
+                                    <Link to="https://twitter.com/SofronievM41383">
                                         Twitter
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <i className="fa fa-instagram" />
-                                    <a href="https://www.instagram.com/?hl=en">
+                                    <Link to="https://www.instagram.com/martin13s18/">
                                         Instagram
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -62,53 +66,19 @@ export function Footer() {
                             </div>
                             <ul className="list-style">
                                 <li>
-                                    <a href="about.html">
+                                    <Link to="about.html">
                                         About us
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="contact.html">
+                                    <Link to="contact.html">
                                         Contact us
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="terms.html">
+                                    <Link to="terms.html">
                                         Terms &amp; Conditions
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-2 col-md-4">
-                        <div className="widget">
-                            <div className="widget-title">
-                                <h4>Useful links</h4>
-                            </div>
-                            <ul className="list-style">
-                                <li>
-                                    <a href="/">
-                                        Leasing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        Submit route
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        How does it work?
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        Agent listings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        View All
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
