@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Login() {
     return (
         <div className="theme-layout">
@@ -13,7 +15,7 @@ export function Login() {
                                 </p>
                                 <div className="friend-logo">
                                     <span>
-                                        <img src="images/wink.png" alt="" />
+                                        <img src="/images/wink.png" alt="logo" />
                                     </span>
                                 </div>
                             </div>
@@ -25,28 +27,38 @@ export function Login() {
                                 <h2 className="log-title">Login</h2>
                                 <p>
                                     Don't use Winku Yet?{" "}
-                                    <a href="/" title="">
+                                    <Link to="/users/register" replace>
                                         Join now
-                                    </a>
+                                    </Link>
                                 </p>
-                                <form method="post">
+                                <form>
                                     <div className="form-group">
-                                        <input type="text" id="input" required="required" />
-                                        <label className="control-label" htmlFor="input">
+                                        <input 
+                                            type="text" 
+                                            id="username" 
+                                            required="required"
+                                        />
+                                        <label className="control-label" htmlFor="username">
                                             Username
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
+
                                     <div className="form-group">
-                                        <input type="password" required="required" />
-                                        <label className="control-label" htmlFor="input">
+                                        <input 
+                                            type="password" 
+                                            required="required"
+                                            id="password"
+                                        />
+                                        <label className="control-label" htmlFor="password">
                                             Password
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
-                                    <a href="/" title="" className="forgot-pwd">
+                                    <Link href="/" className="forgot-pwd">
                                         Forgot Password?
-                                    </a>
+                                    </Link>
+
                                     <div className="submit-btns">
                                         <button className="mtr-btn signin" type="button">
                                             <span>Login</span>

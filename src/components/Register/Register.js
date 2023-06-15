@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Register() {
     return (
         <div className="theme-layout">
@@ -13,7 +15,7 @@ export function Register() {
                                 </p>
                                 <div className="friend-logo">
                                     <span>
-                                        <img src="images/wink.png" alt="" />
+                                        <img src="/images/wink.png" alt="logo" />
                                     </span>
                                 </div>
                             </div>
@@ -36,6 +38,7 @@ export function Register() {
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
+
                                     <div className="form-group">
                                         <input 
                                             type="text" 
@@ -48,6 +51,7 @@ export function Register() {
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
+
                                     <div className="form-group">
                                         <input 
                                             type="text" 
@@ -60,6 +64,7 @@ export function Register() {
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
+
                                     <div className="form-group">
                                         <input 
                                             type="password" 
@@ -72,6 +77,7 @@ export function Register() {
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
+
                                     <div className="form-group">
                                         <input 
                                             type="password" 
@@ -84,6 +90,7 @@ export function Register() {
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
+
                                     <div className="form-radio">
                                         <div className="radio">
                                             <label htmlFor="gender">
@@ -97,6 +104,7 @@ export function Register() {
                                                 Male
                                             </label>
                                         </div>
+
                                         <div className="radio">
                                             <label htmlFor="gender">
                                                 <input type="radio" name="radio" id="gender"/>
@@ -105,6 +113,7 @@ export function Register() {
                                             </label>
                                         </div>
                                     </div>
+
                                     <div className="form-group">
                                         <input type="text" required="required" id="email" name="email" />
                                         <label className="control-label" htmlFor="email">
@@ -118,6 +127,7 @@ export function Register() {
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
+
                                     <div className="checkbox">
                                         <label>
                                             <input type="checkbox" defaultChecked="checked" />
@@ -125,9 +135,11 @@ export function Register() {
                                             Accept Terms &amp; Conditions ?
                                         </label>
                                     </div>
-                                    <a href="/" title="" className="already-have">
+
+                                    <Link to="/users/login" className="already-have" replace>
                                         Already have an account
-                                    </a>
+                                    </Link>
+
                                     <div className="submit-btns">
                                         <button className="mtr-btn signup" type="button">
                                             <span>Register</span>
