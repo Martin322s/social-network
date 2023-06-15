@@ -26,7 +26,6 @@ export function Friends() {
                         <li>
                             <figure>
                                 <img src="/images/resources/friend-avatar.jpg" alt="friends" />
-                                <span className="status f-online" />
                             </figure>
                             <div className="friendz-meta">
                                 <Link to="/">bucky barnes</Link>
@@ -43,7 +42,6 @@ export function Friends() {
                         <li>
                             <figure>
                                 <img src="/images/resources/friend-avatar2.jpg" alt="friends" />
-                                <span className="status f-away" />
                             </figure>
                             <div className="friendz-meta">
                                 <Link to="time-line.html">Sarah Loren</Link>
@@ -60,7 +58,6 @@ export function Friends() {
                         <li>
                             <figure>
                                 <img src="/images/resources/friend-avatar3.jpg" alt="friends" />
-                                <span className="status f-off" />
                             </figure>
                             <div className="friendz-meta">
                                 <Link to="time-line.html">jason borne</Link>
@@ -77,7 +74,6 @@ export function Friends() {
                         <li>
                             <figure>
                                 <img src="/images/resources/friend-avatar4.jpg" alt="friends" />
-                                <span className="status f-off" />
                             </figure>
                             <div className="friendz-meta">
                                 <Link to="time-line.html">Cameron diaz</Link>
@@ -94,7 +90,6 @@ export function Friends() {
                         <li>
                             <figure>
                                 <img src="/images/resources/friend-avatar5.jpg" alt="friends" />
-                                <span className="status f-online" />
                             </figure>
                             <div className="friendz-meta">
                                 <Link to="time-line.html">daniel warber</Link>
@@ -111,7 +106,6 @@ export function Friends() {
                         <li>
                             <figure>
                                 <img src="/images/resources/friend-avatar6.jpg" alt="friends" />
-                                <span className="status f-away" />
                             </figure>
                             <div className="friendz-meta">
                                 <Link to="time-line.html">andrew</Link>
@@ -128,7 +122,6 @@ export function Friends() {
                         <li>
                             <figure>
                                 <img src="/images/resources/friend-avatar7.jpg" alt="friends" />
-                                <span className="status f-off" />
                             </figure>
                             <div className="friendz-meta">
                                 <Link to="time-line.html">amy watson</Link>
@@ -145,7 +138,6 @@ export function Friends() {
                         <li>
                             <figure>
                                 <img src="/images/resources/friend-avatar5.jpg" alt="friends" />
-                                <span className="status f-online" />
                             </figure>
                             <div className="friendz-meta">
                                 <Link to="time-line.html">daniel warber</Link>

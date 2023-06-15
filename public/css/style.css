@@ -1265,6 +1265,10 @@ form button {
     position: relative;
 }
 
+.we-video-info > ul li span:hover {
+    cursor: pointer;
+}
+
 .we-video-info > ul li.upload-date {
     float: right;
     font-size: 12px;
@@ -1754,10 +1758,15 @@ li.post-comment .comet-avatar {
 }
 
 .post-comt-box form button {
-    bottom: 13px;
     position: absolute;
+    top: 17%;
     right: 5px;
-    background: lightblue;
+    background: rgb(37, 191, 243);
+}
+
+.post-comt-box form button:hover {
+    background-color: rgb(9, 81, 236);
+    color: white;
 }
 
 /*--- search friend widget ---*/

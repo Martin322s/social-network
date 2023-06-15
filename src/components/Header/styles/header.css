@@ -128,6 +128,9 @@ header.sticky {
     width: 100%;
 }
 
+.form-search input:focus {
+    outline-color: rgb(255, 0, 0);
+}
 .form-search button {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;

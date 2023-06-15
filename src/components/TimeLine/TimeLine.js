@@ -10,7 +10,7 @@ export function TimeLine() {
                             <img src="/images/resources/admin2.jpg" alt="profile" />
                         </figure>
                         <div className="newpst-input">
-                            <form method="post">
+                            <form>
                                 <textarea
                                     rows={2}
                                     placeholder="write something"
@@ -20,14 +20,14 @@ export function TimeLine() {
                                     <ul>
                                         <li>
                                             <i className="fa fa-image" />
-                                            <label className="fileContainer">
-                                                <input type="file" />
+                                            <label className="fileContainer" htmlFor="file">
+                                                <input type="file" id="file" />
                                             </label>
                                         </li>
                                         <li>
                                             <i className="fa fa-video-camera" />
-                                            <label className="fileContainer">
-                                                <input type="file" />
+                                            <label className="fileContainer" htmlFor="video">
+                                                <input type="file" id="video "/>
                                             </label>
                                         </li>
                                         <li>
@@ -72,25 +72,16 @@ export function TimeLine() {
                                         Lorem ipsum dolor sit amet, consectetur ipisicing elit, sed do
                                         eiusmod tempor incididunt ut labore et dolore magna aliqua...{" "}
                                     </p>
-                                    <Link to="/" title="">
-                                        www.sample.com
-                                    </Link>
                                 </div>
                                 <div className="we-video-info">
                                     <ul>
-                                        <li>
-                                            <span className="views" data-toggle="tooltip" title="views">
-                                                <i className="fa fa-eye" />
-                                                <ins>1.2k</ins>
-                                            </span>
-                                        </li>
                                         <li>
                                             <span
                                                 className="comment"
                                                 data-toggle="tooltip"
                                                 title="Comments"
                                             >
-                                                <i className="fa fa-comments-o" />
+                                                <i className="fas fa-comments" />
                                                 <ins>52</ins>
                                             </span>
                                         </li>
@@ -109,69 +100,6 @@ export function TimeLine() {
                                                 <i className="ti-heart-broken" />
                                                 <ins>200</ins>
                                             </span>
-                                        </li>
-                                        <li className="social-media">
-                                            <div className="menu">
-                                                <div className="btn trigger">
-                                                    <i className="fa fa-share-alt" />
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-html5" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-facebook" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-google-plus" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-twitter" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-css3" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-instagram" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-dribbble" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-pinterest" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -183,33 +111,27 @@ export function TimeLine() {
                     <div className="user-post">
                         <div className="friend-info">
                             <figure>
-                                <img src="images/resources/friend-avatar10.jpg" alt="" />
+                                <img src="/images/resources/friend-avatar10.jpg" alt="public" />
                             </figure>
                             <div className="friend-name">
                                 <ins>
-                                    <Link to="time-line.html" title="">
+                                    <Link to="time-line.html">
                                         Janice Griffith
                                     </Link>
                                 </ins>
-                                <span>published: june,2 2018 19:PM</span>
+                                <span>published: june,2 2018</span>
                             </div>
                             <div className="post-meta">
                                 <img src="images/resources/user-post.jpg" alt="" />
                                 <div className="we-video-info">
                                     <ul>
                                         <li>
-                                            <span className="views" data-toggle="tooltip" title="views">
-                                                <i className="fa fa-eye" />
-                                                <ins>1.2k</ins>
-                                            </span>
-                                        </li>
-                                        <li>
                                             <span
                                                 className="comment"
                                                 data-toggle="tooltip"
                                                 title="Comments"
                                             >
-                                                <i className="fa fa-comments-o" />
+                                                <i className="fas fa-comments" />
                                                 <ins>52</ins>
                                             </span>
                                         </li>
@@ -228,69 +150,6 @@ export function TimeLine() {
                                                 <i className="ti-heart-broken" />
                                                 <ins>200</ins>
                                             </span>
-                                        </li>
-                                        <li className="social-media">
-                                            <div className="menu">
-                                                <div className="btn trigger">
-                                                    <i className="fa fa-share-alt" />
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-html5" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-facebook" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-google-plus" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-twitter" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-css3" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-instagram" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-dribbble" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-pinterest" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -310,19 +169,15 @@ export function TimeLine() {
                             <ul className="we-comet">
                                 <li>
                                     <div className="comet-avatar">
-                                        <img src="images/resources/comet-1.jpg" alt="" />
+                                        <img src="/images/resources/comet-1.jpg" alt="profile" />
                                     </div>
                                     <div className="we-comment">
                                         <div className="coment-head">
                                             <h5>
-                                                <Link to="time-line.html" title="">
+                                                <Link to="/">
                                                     Jason borne
                                                 </Link>
                                             </h5>
-                                            <span>1 year ago</span>
-                                            <Link className="we-reply" to="/" title="Reply">
-                                                <i className="fa fa-reply" />
-                                            </Link>
                                         </div>
                                         <p>
                                             we are working for the dance and sing songs. this car is very
@@ -333,45 +188,15 @@ export function TimeLine() {
                                     <ul>
                                         <li>
                                             <div className="comet-avatar">
-                                                <img src="images/resources/comet-2.jpg" alt="" />
+                                                <img src="/images/resources/comet-3.jpg" alt="" />
                                             </div>
                                             <div className="we-comment">
                                                 <div className="coment-head">
                                                     <h5>
-                                                        <Link to="time-line.html" title="">
-                                                            alexendra dadrio
-                                                        </Link>
-                                                    </h5>
-                                                    <span>1 month ago</span>
-                                                    <Link className="we-reply" to="/" title="Reply">
-                                                        <i className="fa fa-reply" />
-                                                    </Link>
-                                                </div>
-                                                <p>
-                                                    yes, really very awesome car i see the features of this
-                                                    car in the official website of{" "}
-                                                    <Link to="/" title="">
-                                                        #Mercedes-Benz
-                                                    </Link>{" "}
-                                                    and really impressed :-)
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="comet-avatar">
-                                                <img src="images/resources/comet-3.jpg" alt="" />
-                                            </div>
-                                            <div className="we-comment">
-                                                <div className="coment-head">
-                                                    <h5>
-                                                        <Link to="time-line.html" title="">
+                                                        <Link to="time-line.html">
                                                             Olivia
                                                         </Link>
                                                     </h5>
-                                                    <span>16 days ago</span>
-                                                    <Link className="we-reply" to="/" title="Reply">
-                                                        <i className="fa fa-reply" />
-                                                    </Link>
                                                 </div>
                                                 <p>
                                                     i like lexus cars, lexus cars are most beautiful with the
@@ -382,60 +207,18 @@ export function TimeLine() {
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <div className="comet-avatar">
-                                        <img src="images/resources/comet-1.jpg" alt="" />
-                                    </div>
-                                    <div className="we-comment">
-                                        <div className="coment-head">
-                                            <h5>
-                                                <Link to="time-line.html" title="">
-                                                    Donald Trump
-                                                </Link>
-                                            </h5>
-                                            <span>1 week ago</span>
-                                            <Link className="we-reply" to="/" title="Reply">
-                                                <i className="fa fa-reply" />
-                                            </Link>
-                                        </div>
-                                        <p>
-                                            we are working for the dance and sing songs. this video is
-                                            very awesome for the youngster. please vote this video and
-                                            like our channel
-                                            <i className="em em-smiley" />
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <Link to="/" title="" className="showmore underline">
-                                        more comments
-                                    </Link>
-                                </li>
+
                                 <li className="post-comment">
                                     <div className="comet-avatar">
                                         <img src="images/resources/comet-1.jpg" alt="" />
                                     </div>
                                     <div className="post-comt-box">
-                                        <form method="post">
-                                            <textarea placeholder="Post your comment" defaultValue={""} />
-                                            <div className="add-smiles">
-                                                <span className="em em-expressionless" title="add icon" />
-                                            </div>
-                                            <div className="smiles-bunch">
-                                                <i className="em em---1" />
-                                                <i className="em em-smiley" />
-                                                <i className="em em-anguished" />
-                                                <i className="em em-laughing" />
-                                                <i className="em em-angry" />
-                                                <i className="em em-astonished" />
-                                                <i className="em em-blush" />
-                                                <i className="em em-disappointed" />
-                                                <i className="em em-worried" />
-                                                <i className="em em-kissing_heart" />
-                                                <i className="em em-rage" />
-                                                <i className="em em-stuck_out_tongue" />
-                                            </div>
-                                            <button type="submit" />
+                                        <form>
+                                            <textarea
+                                                placeholder="Post your comment"
+                                                defaultValue={""}
+                                            />
+                                            <button type="submit">Post</button>
                                         </form>
                                     </div>
                                 </li>
@@ -447,7 +230,7 @@ export function TimeLine() {
                     <div className="user-post">
                         <div className="friend-info">
                             <figure>
-                                <img src="images/resources/friend-avatar10.jpg" alt="" />
+                                <img src="/images/resources/friend-avatar10.jpg" alt="profile" />
                             </figure>
                             <div className="friend-name">
                                 <ins>
@@ -455,7 +238,7 @@ export function TimeLine() {
                                         Janice Griffith
                                     </Link>
                                 </ins>
-                                <span>published: june,2 2018 19:PM</span>
+                                <span>published: june,2 2018</span>
                             </div>
                             <div className="post-meta">
                                 <iframe
@@ -469,18 +252,12 @@ export function TimeLine() {
                                 <div className="we-video-info">
                                     <ul>
                                         <li>
-                                            <span className="views" data-toggle="tooltip" title="views">
-                                                <i className="fa fa-eye" />
-                                                <ins>1.2k</ins>
-                                            </span>
-                                        </li>
-                                        <li>
                                             <span
                                                 className="comment"
                                                 data-toggle="tooltip"
                                                 title="Comments"
                                             >
-                                                <i className="fa fa-comments-o" />
+                                                <i className="fas fa-comments" />
                                                 <ins>52</ins>
                                             </span>
                                         </li>
@@ -500,77 +277,11 @@ export function TimeLine() {
                                                 <ins>200</ins>
                                             </span>
                                         </li>
-                                        <li className="social-media">
-                                            <div className="menu">
-                                                <div className="btn trigger">
-                                                    <i className="fa fa-share-alt" />
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-html5" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-facebook" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-google-plus" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-twitter" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-css3" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-instagram" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-dribbble" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                                <div className="rotater">
-                                                    <div className="btn btn-icon">
-                                                        <Link to="/" title="">
-                                                            <i className="fa fa-pinterest" />
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
                                     </ul>
                                 </div>
                                 <div className="description">
                                     <p>
-                                        Lonely Cat Enjoying in Summer Curabitur{" "}
-                                        <Link to="/" title="">
-                                            #mypage
-                                        </Link>{" "}
+                                        Lonely Cat Enjoying in Summer Curabitur #my page
                                         ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
                                         Maecenas tempus, tellus eget condimentum rhoncus, sem quam
                                         semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam
@@ -588,14 +299,10 @@ export function TimeLine() {
                                     <div className="we-comment">
                                         <div className="coment-head">
                                             <h5>
-                                                <Link to="time-line.html" title="">
+                                                <Link to="/">
                                                     Jason borne
                                                 </Link>
                                             </h5>
-                                            <span>1 year ago</span>
-                                            <Link className="we-reply" to="/" title="Reply">
-                                                <i className="fa fa-reply" />
-                                            </Link>
                                         </div>
                                         <p>
                                             we are working for the dance and sing songs. this video is
@@ -606,57 +313,33 @@ export function TimeLine() {
                                 </li>
                                 <li>
                                     <div className="comet-avatar">
-                                        <img src="images/resources/comet-2.jpg" alt="" />
+                                        <img src="/images/resources/comet-2.jpg" alt="profile" />
                                     </div>
                                     <div className="we-comment">
                                         <div className="coment-head">
                                             <h5>
-                                                <Link to="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     Sophia
                                                 </Link>
                                             </h5>
-                                            <span>1 week ago</span>
-                                            <Link className="we-reply" to="/" title="Reply">
-                                                <i className="fa fa-reply" />
-                                            </Link>
                                         </div>
                                         <p>
                                             we are working for the dance and sing songs. this video is
                                             very awesome for the youngster.
-                                            <i className="em em-smiley" />
                                         </p>
                                     </div>
                                 </li>
-                                <li>
-                                    <Link to="/" title="" className="showmore underline">
-                                        more comments
-                                    </Link>
-                                </li>
                                 <li className="post-comment">
                                     <div className="comet-avatar">
-                                        <img src="images/resources/comet-2.jpg" alt="" />
+                                        <img src="/images/resources/comet-2.jpg" alt="profile" />
                                     </div>
                                     <div className="post-comt-box">
-                                        <form method="post">
-                                            <textarea placeholder="Post your comment" defaultValue={""} />
-                                            <div className="add-smiles">
-                                                <span className="em em-expressionless" title="add icon" />
-                                            </div>
-                                            <div className="smiles-bunch">
-                                                <i className="em em---1" />
-                                                <i className="em em-smiley" />
-                                                <i className="em em-anguished" />
-                                                <i className="em em-laughing" />
-                                                <i className="em em-angry" />
-                                                <i className="em em-astonished" />
-                                                <i className="em em-blush" />
-                                                <i className="em em-disappointed" />
-                                                <i className="em em-worried" />
-                                                <i className="em em-kissing_heart" />
-                                                <i className="em em-rage" />
-                                                <i className="em em-stuck_out_tongue" />
-                                            </div>
-                                            <button type="submit" />
+                                        <form>
+                                            <textarea
+                                                placeholder="Post your comment"
+                                                defaultValue={""}
+                                            />
+                                            <button type="submit">Post</button>
                                         </form>
                                     </div>
                                 </li>
