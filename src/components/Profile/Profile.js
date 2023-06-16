@@ -2,12 +2,14 @@ import { Link, useRoutes } from "react-router-dom";
 import { TimeLine } from "../TimeLine/TimeLine";
 import { ProfileFriends } from "../Profile Friends/ProfileFriends";
 import { Photos } from "../Photos/Photos";
+import { About } from "../About Section/About";
 
 export function Profile() {
     const routes = useRoutes([
         { path: "/", element: <TimeLine /> },
         { path: "/timeline", element: <TimeLine /> },
         { path: "/friends", element: <ProfileFriends /> },
+        { path: "/about", element: <About /> },
         { path: "/photos", element: <Photos />}
     ])
     return (
