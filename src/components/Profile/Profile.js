@@ -4,6 +4,7 @@ import { ProfileFriends } from "../Profile Friends/ProfileFriends";
 import { Photos } from "../Photos/Photos";
 import { About } from "../About Section/About";
 import { Shortcuts } from "../Shortcuts/Shortcuts";
+import { ChangePassword } from "../Change Password/ChangePassword";
 
 export function Profile() {
     const routes = useRoutes([
@@ -11,7 +12,8 @@ export function Profile() {
         { path: "/timeline", element: <TimeLine /> },
         { path: "/friends", element: <ProfileFriends /> },
         { path: "/about", element: <About /> },
-        { path: "/images", element: <Photos />}
+        { path: "/images", element: <Photos />},
+        { path: "/password", element: <ChangePassword /> }
     ])
     return (
         <div className="theme-layout">
@@ -60,7 +62,7 @@ export function Profile() {
                                             <Link to="/profile/timeline">
                                                 time line
                                             </Link>
-                                            <Link to="/profile/photos">
+                                            <Link to="/profile/images">
                                                 Photos
                                             </Link>
                                             <Link to="/profile/friends">
@@ -91,13 +93,13 @@ export function Profile() {
                                                 <ul className="naves">
                                                     <li>
                                                         <i className="ti-info-alt" />
-                                                        <Link to="edit-profile-basic.html">
+                                                        <Link to="/profile/about">
                                                             Basic info
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <i className="ti-lock" />
-                                                        <Link to="edit-password.html">
+                                                        <Link to="/profile/password">
                                                             change password
                                                         </Link>
                                                     </li>
