@@ -12,7 +12,7 @@ export function Shortcuts() {
                     </li>
                     <li>
                         <i className="ti-user" />
-                        <Link to="/">Friends</Link>
+                        <Link to="/profile">Profile</Link>
                     </li>
                     <li>
                         <i className="ti-image" />
