@@ -1,8 +1,15 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, useRoutes } from "react-router-dom";
 import { TimeLine } from "../TimeLine/TimeLine";
-import { Friends } from "../Friends/Friends";
+import { ProfileFriends } from "../Profile Friends/ProfileFriends";
+import { Photos } from "../Photos/Photos";
 
 export function Profile() {
+    const routes = useRoutes([
+        { path: "/", element: <TimeLine /> },
+        { path: "/timeline", element: <TimeLine /> },
+        { path: "/friends", element: <ProfileFriends /> },
+        { path: "/photos", element: <Photos />}
+    ])
     return (
         <div className="theme-layout">
             <section>
@@ -94,11 +101,7 @@ export function Profile() {
                                             </div>
                                         </aside>
                                     </div>
-                                {/* <TimeLine /> */}
-                                <Friends />
-                                <Routes>
-                                    <Route path="/profile/timeline" element={<TimeLine />}/>
-                                </Routes>
+                                    {routes}
                                 </div>
                             </div>
                         </div>
