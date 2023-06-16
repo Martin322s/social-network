@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function About() {
     return (
         <div className="col-lg-6">
@@ -18,13 +20,12 @@ export function About() {
                     <div className="d-flex flex-row mt-2">
                         <ul className="nav nav-tabs nav-tabs--vertical nav-tabs--left">
                             <li className="nav-item">
-                                <a
-                                    href="#basic"
+                                <Link
+                                    to="#basic"
                                     className="nav-link active"
-                                    data-toggle="tab"
                                 >
                                     Basic info
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <div className="tab-content">
@@ -44,13 +45,7 @@ export function About() {
                                     </li>
                                     <li>
                                         <i className="ti-email" />
-                                        <a
-                                            href="https://wpkixx.com/cdn-cgi/l/email-protection"
-                                            className="__cf_email__"
-                                            data-cfemail="3c4553494e515d55507c59515d5550125f5351"
-                                        >
-                                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                                        </a>
+                                        Lorem ipsum dolor sit amet.
                                     </li>
                                 </ul>
                             </div>
