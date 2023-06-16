@@ -5,6 +5,7 @@ import { Photos } from "../Photos/Photos";
 import { About } from "../About Section/About";
 import { Shortcuts } from "../Shortcuts/Shortcuts";
 import { ChangePassword } from "../Change Password/ChangePassword";
+import { EditProfile } from "../Edit Profile/EditProfile";
 
 export function Profile() {
     const routes = useRoutes([
@@ -13,7 +14,8 @@ export function Profile() {
         { path: "/friends", element: <ProfileFriends /> },
         { path: "/about", element: <About /> },
         { path: "/images", element: <Photos />},
-        { path: "/password", element: <ChangePassword /> }
+        { path: "/password", element: <ChangePassword /> },
+        { path: "/edit", element: <EditProfile /> }
     ])
     return (
         <div className="theme-layout">
@@ -101,6 +103,12 @@ export function Profile() {
                                                         <i className="ti-lock" />
                                                         <Link to="/profile/password">
                                                             change password
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <i className="ti-info-alt" />
+                                                        <Link to="/profile/edit">
+                                                            Edit profile
                                                         </Link>
                                                     </li>
                                                 </ul>

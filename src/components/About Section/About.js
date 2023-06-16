@@ -26,42 +26,6 @@ export function About() {
                                     Basic info
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a
-                                    href="#location"
-                                    className="nav-link"
-                                    data-toggle="tab"
-                                >
-                                    location
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    href="#work"
-                                    className="nav-link"
-                                    data-toggle="tab"
-                                >
-                                    work and education
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    href="#interest"
-                                    className="nav-link"
-                                    data-toggle="tab"
-                                >
-                                    interests
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    href="#lang"
-                                    className="nav-link"
-                                    data-toggle="tab"
-                                >
-                                    languages
-                                </a>
-                            </li>
                         </ul>
                         <div className="tab-content">
                             <div className="tab-pane fade show active" id="basic">
@@ -85,68 +49,9 @@ export function About() {
                                             className="__cf_email__"
                                             data-cfemail="3c4553494e515d55507c59515d5550125f5351"
                                         >
-                                            [email&nbsp;protected]
+                                            Lorem ipsum dolor sit amet consectetur adipisicing.
                                         </a>
                                     </li>
-                                    <li>
-                                        <i className="ti-world" />
-                                        www.yoursite.com
-                                    </li>
-                                </ul>
-                            </div>
-                            <div
-                                className="tab-pane fade"
-                                id="location"
-                                role="tabpanel"
-                            >
-                                <div className="location-map">
-                                    <div id="map-canvas" />
-                                </div>
-                            </div>
-                            <div
-                                className="tab-pane fade"
-                                id="work"
-                                role="tabpanel"
-                            >
-                                <div>
-                                    <a href="/" title="">
-                                        Envato
-                                    </a>
-                                    <p>
-                                        work as autohr in envato themeforest from 2013
-                                    </p>
-                                    <ul className="education">
-                                        <li>
-                                            <i className="ti-facebook" /> BSCS from Oxford
-                                            University
-                                        </li>
-                                        <li>
-                                            <i className="ti-twitter" /> MSCS from Harvard
-                                            Unversity
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div
-                                className="tab-pane fade"
-                                id="interest"
-                                role="tabpanel"
-                            >
-                                <ul className="basics">
-                                    <li>Footbal</li>
-                                    <li>internet</li>
-                                    <li>photography</li>
-                                </ul>
-                            </div>
-                            <div
-                                className="tab-pane fade"
-                                id="lang"
-                                role="tabpanel"
-                            >
-                                <ul className="basics">
-                                    <li>english</li>
-                                    <li>french</li>
-                                    <li>spanish</li>
                                 </ul>
                             </div>
                         </div>
