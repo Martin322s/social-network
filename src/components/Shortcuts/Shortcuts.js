@@ -16,11 +16,11 @@ export function Shortcuts() {
                     </li>
                     <li>
                         <i className="ti-image" />
-                        <Link to="/">Images</Link>
+                        <Link to="/profile/images">Images</Link>
                     </li>
                     <li>
                         <i className="ti-video-camera" />
-                        <Link to="/">Timeline</Link>
+                        <Link to="/profile/timeline">Timeline</Link>
                     </li>
                     <li>
                         <i className="fas fa-door-open" />
@@ -32,7 +32,7 @@ export function Shortcuts() {
                     </li>
                     <li>
                         <i className="ti-power-off" />
-                        <Link to="/">Logout</Link>
+                        <Link to="/users/logout">Logout</Link>
                     </li>
                 </ul>
             </div>

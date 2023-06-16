@@ -3,6 +3,7 @@ import { TimeLine } from "../TimeLine/TimeLine";
 import { ProfileFriends } from "../Profile Friends/ProfileFriends";
 import { Photos } from "../Photos/Photos";
 import { About } from "../About Section/About";
+import { Shortcuts } from "../Shortcuts/Shortcuts";
 
 export function Profile() {
     const routes = useRoutes([
@@ -10,7 +11,7 @@ export function Profile() {
         { path: "/timeline", element: <TimeLine /> },
         { path: "/friends", element: <ProfileFriends /> },
         { path: "/about", element: <About /> },
-        { path: "/photos", element: <Photos />}
+        { path: "/images", element: <Photos />}
     ])
     return (
         <div className="theme-layout">
@@ -84,6 +85,7 @@ export function Profile() {
                                 <div className="row" id="page-contents">
                                     <div className="col-lg-3">
                                         <aside className="sidebar static">
+                                            <Shortcuts />
                                             <div className="widget">
                                                 <h4 className="widget-title">Edit info</h4>
                                                 <ul className="naves">

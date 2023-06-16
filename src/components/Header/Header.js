@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles/header.css";
 
 export function Header() {
@@ -25,9 +26,9 @@ export function Header() {
                                 </li>
                             </ul>
                             <div className="user-img">
-                                <a href="/profile">
+                                <Link to="/profile/timeline">
                                     <img src="/images/resources/admin.jpg" alt="profile" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
