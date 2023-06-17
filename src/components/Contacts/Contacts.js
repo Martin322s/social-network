@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Contacts() {
     return (
         <div className="container">
@@ -8,34 +10,40 @@ export function Contacts() {
                             <div className="cnt-title">
                                 <span>Send us a message</span>
                                 <i>
-                                    <img src="images/envelop.png" alt="" />
+                                    <img src="images/envelop.png" alt="profile" />
                                 </i>
                             </div>
-                            <form method="post">
+                            <form>
                                 <div className="form-group">
                                     <input type="text" id="input" required="required" />
                                     <label className="control-label" htmlFor="input">
-                                        First &amp; Last Name
+                                        First Name
+                                    </label>
+                                    <i className="mtrl-select" />
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" id="input" required="required" />
+                                    <label className="control-label" htmlFor="input">
+                                        Last Name
                                     </label>
                                     <i className="mtrl-select" />
                                 </div>
                                 <div className="form-group">
                                     <input type="text" required="required" />
                                     <label className="control-label" htmlFor="input">
-                                        <a
-                                            href="https://wpkixx.com/cdn-cgi/l/email-protection"
+                                        <Link
+                                            to="https://wpkixx.com/cdn-cgi/l/email-protection"
                                             className="__cf_email__"
-                                            data-cfemail="5e1b333f37321e"
                                         >
-                                            [email&nbsp;protected]
-                                        </a>
+                                            Email
+                                        </Link>
                                     </label>
                                     <i className="mtrl-select" />
                                 </div>
                                 <div className="form-group">
                                     <input type="text" required="required" />
                                     <label className="control-label" htmlFor="input">
-                                        Phone No.
+                                        Phone
                                     </label>
                                     <i className="mtrl-select" />
                                 </div>
@@ -70,45 +78,37 @@ export function Contacts() {
                             <ul>
                                 <li>
                                     <i className="ti-location-pin" />
-                                    <span>360 king street feasterville trevose, PA 19054</span>
+                                    <span>Bulgaria, Montana, Neofit Bozveli 40 Str.</span>
                                 </li>
                                 <li>
                                     <i className="fa fa-mobile-phone" />
-                                    <span>(800) 900-200-300</span>
+                                    <span>+359 87 704 0853</span>
                                 </li>
                                 <li>
                                     <i className="fa fa-envelope-o" />
-                                    <span>
-                                        <a
-                                            href="https://wpkixx.com/cdn-cgi/l/email-protection"
-                                            className="__cf_email__"
-                                            data-cfemail="cba2a5ada48bb2a4beb9a6aaa2a7e5a8a4a6"
-                                        >
-                                            [email&nbsp;protected]
-                                        </a>
-                                    </span>
+                                    marti.sofroniev0408@gmail.com
                                 </li>
                             </ul>
                             <ul className="social-media">
                                 <li>
-                                    <a href="#" title="">
+                                    <Link to="/">
                                         <i className="fa fa-facebook-square" />
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#" title="">
+                                    <Link to="/">
                                         <i className="fa fa-google-plus-square" />
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#" title="">
+                                    <Link to="/">
                                         <i className="fa fa-pinterest-square" />
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#" title="">
+                                    <Link to="/">
                                         <i className="fa fa-twitter-square" />
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                             <h1 className="bg-cntct">Winku</h1>

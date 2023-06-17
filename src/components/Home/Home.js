@@ -2,9 +2,13 @@ import { useRoutes } from "react-router-dom";
 import { Friends } from "../Friends/Friends";
 import { Shortcuts } from "../Shortcuts/Shortcuts";
 import { TimeLine } from "../TimeLine/TimeLine";
+import { Contacts } from "../Contacts/Contacts";
 
 export function Home() {
-    const routes = useRoutes()
+    const routes = useRoutes([
+        { path: "/contacts", element: <Contacts /> },
+        { path: "/", element: <TimeLine /> }
+    ])
     return (
         <div className="gap gray-bg">
             <div className="container-fluid">
@@ -13,7 +17,7 @@ export function Home() {
                         <div className="row" id="page-contents">
                             <section className="sidebars">
                                 <Shortcuts />
-                                <TimeLine />
+                                {routes}
                                 <Friends />
                             </section>
                         </div>
