@@ -15,6 +15,10 @@ export function Shortcuts() {
                         <Link to="/profile">Profile</Link>
                     </li>
                     <li>
+                        <i className="ti-user" />
+                        <Link to="/profile/messages-inbox">Messages</Link>
+                    </li>
+                    <li>
                         <i className="ti-image" />
                         <Link to="/profile/images">Images</Link>
                     </li>

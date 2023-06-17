@@ -6,6 +6,7 @@ import { About } from "../About Section/About";
 import { Shortcuts } from "../Shortcuts/Shortcuts";
 import { ChangePassword } from "../Change Password/ChangePassword";
 import { EditProfile } from "../Edit Profile/EditProfile";
+import { Messages } from "../Messages/Messages";
 
 export function Profile() {
     const routes = useRoutes([
@@ -13,9 +14,10 @@ export function Profile() {
         { path: "/timeline", element: <TimeLine /> },
         { path: "/friends", element: <ProfileFriends /> },
         { path: "/about", element: <About /> },
-        { path: "/images", element: <Photos />},
+        { path: "/images", element: <Photos /> },
         { path: "/password", element: <ChangePassword /> },
-        { path: "/edit", element: <EditProfile /> }
+        { path: "/edit", element: <EditProfile /> },
+        { path: "/messages-inbox", element: <Messages /> }
     ])
     return (
         <div className="theme-layout">
@@ -69,6 +71,9 @@ export function Profile() {
                                             </Link>
                                             <Link to="/profile/friends">
                                                 Friends
+                                            </Link>
+                                            <Link to="/profile/messages-inbox">
+                                                Messages
                                             </Link>
                                             <Link to="/profile/about">
                                                 About
