@@ -27,6 +27,10 @@ export function Shortcuts() {
                         <Link to="/profile/timeline">Timeline</Link>
                     </li>
                     <li>
+                        <i className="ti-video-camera" />
+                        <Link to="/contacts">Contacts</Link>
+                    </li>
+                    <li>
                         <i className="fas fa-door-open" />
                         <Link to="/users/login">Login</Link>
                     </li>
