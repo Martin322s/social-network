@@ -27,10 +27,10 @@ export function Register() {
                                 <h2 className="log-title">Register</h2>
                                 <form>
                                     <div className="form-group">
-                                        <input 
-                                            type="text" 
-                                            required="required" 
-                                            id="firstName" 
+                                        <input
+                                            type="text"
+                                            required="required"
+                                            id="firstName"
                                             name="firstName"
                                         />
                                         <label className="control-label" htmlFor="firstName">
@@ -40,11 +40,11 @@ export function Register() {
                                     </div>
 
                                     <div className="form-group">
-                                        <input 
-                                            type="text" 
-                                            required="required" 
-                                            id="lastName" 
-                                            name="lastName" 
+                                        <input
+                                            type="text"
+                                            required="required"
+                                            id="lastName"
+                                            name="lastName"
                                         />
                                         <label className="control-label" htmlFor="lastName">
                                             Last Name
@@ -53,24 +53,25 @@ export function Register() {
                                     </div>
 
                                     <div className="form-group">
-                                        <input 
-                                            type="text" 
-                                            required="required" 
-                                            id="username" 
-                                            name="username" 
-                                        />
-                                        <label className="control-label" htmlFor="username">
-                                            Username
+                                        <input type="text" required="required" id="email" name="email" />
+                                        <label className="control-label" htmlFor="email">
+                                            <a
+                                                href="https://wpkixx.com/cdn-cgi/l/email-protection"
+                                                className="__cf_email__"
+                                                data-cfemail="6c29010d05002c"
+                                            >
+                                                Email
+                                            </a>
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
 
                                     <div className="form-group">
-                                        <input 
-                                            type="password" 
-                                            required="required" 
-                                            id="password" 
-                                            name="password" 
+                                        <input
+                                            type="password"
+                                            required="required"
+                                            id="password"
+                                            name="password"
                                         />
                                         <label className="control-label" htmlFor="password">
                                             Password
@@ -79,11 +80,11 @@ export function Register() {
                                     </div>
 
                                     <div className="form-group">
-                                        <input 
-                                            type="password" 
-                                            required="required" 
-                                            id="repassword" 
-                                            name="repassword" 
+                                        <input
+                                            type="password"
+                                            required="required"
+                                            id="repassword"
+                                            name="repassword"
                                         />
                                         <label className="control-label" htmlFor="repassword">
                                             Confirm password
@@ -107,25 +108,11 @@ export function Register() {
 
                                         <div className="radio">
                                             <label htmlFor="gender">
-                                                <input type="radio" name="radio" id="gender"/>
+                                                <input type="radio" name="radio" id="gender" />
                                                 <i className="check-box" />
                                                 Female
                                             </label>
                                         </div>
-                                    </div>
-
-                                    <div className="form-group">
-                                        <input type="text" required="required" id="email" name="email" />
-                                        <label className="control-label" htmlFor="email">
-                                            <a
-                                                href="https://wpkixx.com/cdn-cgi/l/email-protection"
-                                                className="__cf_email__"
-                                                data-cfemail="6c29010d05002c"
-                                            >
-                                                Email
-                                            </a>
-                                        </label>
-                                        <i className="mtrl-select" />
                                     </div>
 
                                     <div className="checkbox">
