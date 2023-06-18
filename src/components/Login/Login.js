@@ -35,18 +35,20 @@ export function Login() {
                                     <div className="form-group">
                                         <input 
                                             type="text" 
-                                            id="username" 
+                                            id="email"
+                                            name="email"
                                             required="required"
                                         />
-                                        <label className="control-label" htmlFor="username">
-                                            Username
+                                        <label className="control-label" htmlFor="email">
+                                            Email
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
 
                                     <div className="form-group">
                                         <input 
-                                            type="password" 
+                                            type="password"
+                                            name="password"
                                             required="required"
                                             id="password"
                                         />
