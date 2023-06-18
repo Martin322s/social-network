@@ -6,37 +6,47 @@ export function EditProfile() {
                     <h5 className="f-title">
                         <i className="ti-info-alt" /> Edit Basic Information
                     </h5>
-                    <form method="post">
+                    <form>
                         <div className="form-group half">
-                            <input type="text" id="input" required="required" />
-                            <label className="control-label" htmlFor="input">
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                required="required" 
+                            />
+                            <label className="control-label" htmlFor="firstName">
                                 First Name
                             </label>
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group half">
-                            <input type="text" required="required" />
-                            <label className="control-label" htmlFor="input">
+                            <input 
+                                type="text" 
+                                required="required"
+                                id="lastName" 
+                            />
+                            <label className="control-label" htmlFor="lastName">
                                 Last Name
                             </label>
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <input type="text" required="required" />
-                            <label className="control-label" htmlFor="input">
-                                <a
-                                    href="https://wpkixx.com/cdn-cgi/l/email-protection"
-                                    className="__cf_email__"
-                                    data-cfemail="4b0e262a22270b"
-                                >
-                                    Email
-                                </a>
+                            <input 
+                                type="text"
+                                id="email"
+                                required="required" 
+                            />
+                            <label className="control-label" htmlFor="email">
+                                Email
                             </label>
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <input type="text" required="required" />
-                            <label className="control-label" htmlFor="input">
+                            <input 
+                                type="text"
+                                id="phone"
+                                required="required"
+                            />
+                            <label className="control-label" htmlFor="phone">
                                 Phone
                             </label>
                             <i className="mtrl-select" />
@@ -116,14 +126,21 @@ export function EditProfile() {
                         <div className="form-radio">
                             <div className="radio">
                                 <label>
-                                    <input type="radio" defaultChecked="checked" name="radio" />
+                                    <input 
+                                        type="radio" 
+                                        defaultChecked="checked" 
+                                        name="radio"
+                                    />
                                     <i className="check-box" />
                                     Male
                                 </label>
                             </div>
                             <div className="radio">
                                 <label>
-                                    <input type="radio" name="radio" />
+                                    <input 
+                                        type="radio" 
+                                        name="radio" 
+                                    />
                                     <i className="check-box" />
                                     Female
                                 </label>
