@@ -15,53 +15,58 @@ export function Contacts() {
                             </div>
                             <form>
                                 <div className="form-group">
-                                    <input type="text" id="input" required="required" />
-                                    <label className="control-label" htmlFor="input">
+                                    <input 
+                                        type="text" 
+                                        id="firstName"
+                                        required="required" 
+                                    />
+                                    <label className="control-label" htmlFor="firstName">
                                         First Name
                                     </label>
                                     <i className="mtrl-select" />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" id="input" required="required" />
-                                    <label className="control-label" htmlFor="input">
+                                    <input 
+                                        type="text" 
+                                        id="lastName"
+                                        required="required" 
+                                    />
+                                    <label className="control-label" htmlFor="lastName">
                                         Last Name
                                     </label>
                                     <i className="mtrl-select" />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" required="required" />
-                                    <label className="control-label" htmlFor="input">
-                                        <Link
-                                            to="https://wpkixx.com/cdn-cgi/l/email-protection"
-                                            className="__cf_email__"
-                                        >
-                                            Email
-                                        </Link>
+                                    <input 
+                                        type="text" 
+                                        id="email"
+                                        name="email"
+                                        required="required" 
+                                    />
+                                    <label className="control-label" htmlFor="email">
+                                        Email
                                     </label>
                                     <i className="mtrl-select" />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" required="required" />
-                                    <label className="control-label" htmlFor="input">
+                                    <input 
+                                        type="text"
+                                        id="phone"
+                                        required="required" 
+                                    />
+                                    <label className="control-label" htmlFor="phone">
                                         Phone
-                                    </label>
-                                    <i className="mtrl-select" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="text" required="required" />
-                                    <label className="control-label" htmlFor="input">
-                                        Company
                                     </label>
                                     <i className="mtrl-select" />
                                 </div>
                                 <div className="form-group">
                                     <textarea
                                         rows={4}
-                                        id="textarea"
+                                        id="message"
                                         required="required"
                                         defaultValue={""}
                                     />
-                                    <label className="control-label" htmlFor="textarea">
+                                    <label className="control-label" htmlFor="message">
                                         Message
                                     </label>
                                     <i className="mtrl-select" />
@@ -83,10 +88,6 @@ export function Contacts() {
                                 <li>
                                     <i className="fa fa-mobile-phone" />
                                     <span>+359 87 704 0853</span>
-                                </li>
-                                <li>
-                                    <i className="fa fa-envelope-o" />
-                                    marti.sofroniev0408@gmail.com
                                 </li>
                             </ul>
                             <ul className="social-media">
