@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function ProfileFriends() {
     return (
         <div className="col-lg-6">
@@ -5,9 +7,9 @@ export function ProfileFriends() {
                 <div className="frnds">
                     <ul className="nav nav-tabs">
                         <li className="nav-item">
-                            <a className="active" href="#frends" data-toggle="tab">
+                            <Link className="active" to="#frends" data-toggle="tab">
                                 My Friends
-                            </a>{" "}
+                            </Link>{" "}
                             <span>55</span>
                         </li>
                     </ul>
@@ -17,224 +19,224 @@ export function ProfileFriends() {
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/friend-avatar9.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     jhon kates
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 unfriend
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 add friend
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly1.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     sophia Gate
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>tv actresses</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 unfriend
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 add friend
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly2.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     sara grey
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>work at IBM</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 unfriend
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 add friend
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly3.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     Sexy cat
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>Student</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 unfriend
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 add friend
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly4.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     Sara grey
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 unfriend
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 add friend
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly5.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     Amy watson
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>Study in university</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 unfriend
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 add friend
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly6.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     caty lasbo
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>work as dancers</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 unfriend
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 add friend
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly2.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     Ema watson
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>personal business</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 unfriend
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 add friend
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
@@ -245,224 +247,224 @@ export function ProfileFriends() {
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly5.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     Amy watson
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 delete Request
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 Confirm
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly1.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     sophia Gate
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 delete Request
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 Confirm
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly6.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     caty lasbo
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 delete Request
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 Confirm
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/friend-avatar9.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     jhon kates
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 delete Request
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 Confirm
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly2.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     sara grey
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 delete Request
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 Confirm
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly4.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     Sara grey
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 delete Request
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 Confirm
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/nearly3.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     Sexy cat
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 delete Request
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 Confirm
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="nearly-pepls">
                                         <figure>
-                                            <a href="time-line.html" title="">
+                                            <Link to="time-line.html">
                                                 <img src="/images/resources/friend-avatar9.jpg" alt="" />
-                                            </a>
+                                            </Link>
                                         </figure>
                                         <div className="pepl-info">
                                             <h4>
-                                                <a href="time-line.html" title="">
+                                                <Link to="time-line.html">
                                                     jhon kates
-                                                </a>
+                                                </Link>
                                             </h4>
                                             <span>ftv model</span>
-                                            <a
-                                                href="/"
-                                                title=""
+                                            <Link
+                                                to="/"
+                                            
                                                 className="add-butn more-action"
                                                 data-ripple=""
                                             >
                                                 delete Request
-                                            </a>
-                                            <a href="/" title="" className="add-butn" data-ripple="">
+                                            </Link>
+                                            <Link to="/" className="add-butn" data-ripple="">
                                                 Confirm
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </li>
