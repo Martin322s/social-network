@@ -14,7 +14,7 @@ export function Messages() {
                         <ul className="peoples">
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar2.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar2.jpg" alt="avatar" />
                                     <span className="status f-online" />
                                 </figure>
                                 <div className="people-name">
@@ -23,7 +23,7 @@ export function Messages() {
                             </li>
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar3.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar3.jpg" alt="avatar" />
                                     <span className="status f-away" />
                                 </figure>
                                 <div className="people-name">
@@ -32,7 +32,7 @@ export function Messages() {
                             </li>
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar.jpg" alt="avatar" />
                                     <span className="status f-online" />
                                 </figure>
                                 <div className="people-name">
@@ -41,7 +41,7 @@ export function Messages() {
                             </li>
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar4.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar4.jpg" alt="avatar" />
                                     <span className="status off-online" />
                                 </figure>
                                 <div className="people-name">
@@ -50,7 +50,7 @@ export function Messages() {
                             </li>
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar5.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar5.jpg" alt="avatar" />
                                     <span className="status f-online" />
                                 </figure>
                                 <div className="people-name">
@@ -59,7 +59,7 @@ export function Messages() {
                             </li>
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar6.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar6.jpg" alt="avatar" />
                                     <span className="status f-away" />
                                 </figure>
                                 <div className="people-name">
@@ -68,7 +68,7 @@ export function Messages() {
                             </li>
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar7.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar7.jpg" alt="avatar" />
                                     <span className="status off-online" />
                                 </figure>
                                 <div className="people-name">
@@ -77,7 +77,7 @@ export function Messages() {
                             </li>
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar8.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar8.jpg" alt="avatar" />
                                     <span className="status f-online" />
                                 </figure>
                                 <div className="people-name">
@@ -86,7 +86,7 @@ export function Messages() {
                             </li>
                             <li>
                                 <figure>
-                                    <img src="images/resources/friend-avatar6.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar6.jpg" alt="avatar" />
                                     <span className="status f-online" />
                                 </figure>
                                 <div className="people-name">
@@ -97,7 +97,7 @@ export function Messages() {
                         <div className="peoples-mesg-box">
                             <div className="conversation-head">
                                 <figure>
-                                    <img src="images/resources/friend-avatar.jpg" alt="" />
+                                    <img src="images/resources/friend-avatar.jpg" alt="avatar" />
                                 </figure>
                                 <span>
                                     jason bourne <i>online</i>
@@ -106,45 +106,45 @@ export function Messages() {
                             <ul className="chatting-area">
                                 <li className="you">
                                     <figure>
-                                        <img src="images/resources/userlist-2.jpg" alt="" />
+                                        <img src="images/resources/userlist-2.jpg" alt="avatar" />
                                     </figure>
                                     <p>what's liz short for? :)</p>
                                 </li>
                                 <li className="me">
                                     <figure>
-                                        <img src="images/resources/userlist-1.jpg" alt="" />
+                                        <img src="images/resources/userlist-1.jpg" alt="avatar" />
                                     </figure>
                                     <p>Elizabeth lol</p>
                                 </li>
                                 <li className="me">
                                     <figure>
-                                        <img src="images/resources/userlist-1.jpg" alt="" />
+                                        <img src="images/resources/userlist-1.jpg" alt="avatar" />
                                     </figure>
                                     <p>wanna know whats my second guess was?</p>
                                 </li>
                                 <li className="you">
                                     <figure>
-                                        <img src="images/resources/userlist-2.jpg" alt="" />
+                                        <img src="images/resources/userlist-2.jpg" alt="avatar" />
                                     </figure>
                                     <p>yes</p>
                                 </li>
                                 <li className="me">
                                     <figure>
-                                        <img src="images/resources/userlist-1.jpg" alt="" />
+                                        <img src="images/resources/userlist-1.jpg" alt="avatar" />
                                     </figure>
                                     <p>Disney's the lizard king</p>
                                 </li>
                                 <li className="me">
                                     <figure>
-                                        <img src="images/resources/userlist-1.jpg" alt="" />
+                                        <img src="images/resources/userlist-1.jpg" alt="avatar" />
                                     </figure>
                                     <p>i know him 5 years ago</p>
                                 </li>
                                 <li className="you">
                                     <figure>
-                                        <img src="images/resources/userlist-2.jpg" alt="" />
+                                        <img src="images/resources/userlist-2.jpg" alt="avatar" />
                                     </figure>
-                                    <p>coooooooooool dude ;)</p>
+                                    <p>coooooooooool dude</p>
                                 </li>
                             </ul>
                             <div className="message-text-container">
