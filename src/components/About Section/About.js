@@ -21,7 +21,7 @@ export function About() {
                         <ul className="nav nav-tabs nav-tabs--vertical nav-tabs--left">
                             <li className="nav-item">
                                 <Link
-                                    to="#basic"
+                                    to="/"
                                     className="nav-link active"
                                 >
                                     Basic info

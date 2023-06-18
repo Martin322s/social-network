@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function ChangePassword() {
     return (
         <div className="col-lg-6">
@@ -7,31 +9,43 @@ export function ChangePassword() {
                         <i className="ti-lock" />
                         Change Password
                     </h5>
-                    <form method="post">
+                    <form>
                         <div className="form-group">
-                            <input type="password" id="input" required="required" />
-                            <label className="control-label" htmlFor="input">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                required="required" 
+                            />
+                            <label className="control-label" htmlFor="password">
                                 New password
                             </label>
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <input type="password" required="required" />
-                            <label className="control-label" htmlFor="input">
+                            <input 
+                                type="password"
+                                name="repassword"
+                                required="required" 
+                            />
+                            <label className="control-label" htmlFor="repassword">
                                 Confirm password
                             </label>
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <input type="password" required="required" />
-                            <label className="control-label" htmlFor="input">
+                            <input 
+                                type="password" 
+                                name="oldpassword"
+                                required="required" 
+                            />
+                            <label className="control-label" htmlFor="oldpassword">
                                 Current password
                             </label>
                             <i className="mtrl-select" />
                         </div>
-                        <a className="forgot-pwd underline" title="" href="/">
+                        <Link className="forgot-pwd underline" to="/">
                             Forgot Password?
-                        </a>
+                        </Link>
                         <div className="submit-btns">
                             <button type="button" className="mtr-btn">
                                 <span>Cancel</span>
