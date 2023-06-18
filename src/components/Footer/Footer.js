@@ -66,17 +66,17 @@ export function Footer() {
                             </div>
                             <ul className="list-style">
                                 <li>
-                                    <Link to="about.html">
+                                    <Link to="/">
                                         About us
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="contact.html">
+                                    <Link to="/">
                                         Contact us
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="terms.html">
+                                    <Link to="/">
                                         Terms &amp; Conditions
                                     </Link>
                                 </li>
