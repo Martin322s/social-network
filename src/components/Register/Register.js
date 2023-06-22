@@ -9,6 +9,10 @@ export function Register() {
         dispatch({ type: "SET_FIELD", field: ev.target.name, value: ev.target.value });
     }
 
+    const termsStatusChange = (ev) => {
+        dispatch({ type: "TAC_CHECK", field: ev.target.name, value: ev.target.checked });
+    }
+
     const submitHandler = (ev, data) => {
         ev.preventDefault();
         console.log(data);
@@ -150,9 +154,9 @@ export function Register() {
                                         <label>
                                             <input
                                                 type="checkbox"
-                                                defaultChecked="checked"
-                                                value={state.value}
-                                                onChange={(ev) => changeHandler(ev)}
+                                                name="tac"
+                                                checked={state.tac}
+                                                onChange={(ev) => termsStatusChange(ev)}
                                             />
                                             <i className="check-box" />
                                             Accept Terms &amp; Conditions ?
