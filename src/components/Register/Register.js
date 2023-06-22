@@ -1,6 +1,19 @@
+import { useReducer } from "react";
 import { Link } from "react-router-dom";
+import { initialState, reducer } from "./data/registerData";
 
 export function Register() {
+    const [state, dispatch] = useReducer(reducer, initialState);
+
+    const changeHandler = (ev) => {
+        dispatch({ type: "SET_FIELD", field: ev.target.name, value: ev.target.value });
+    }
+
+    const submitHandler = (ev, data) => {
+        ev.preventDefault();
+        console.log(data);
+    }
+
     return (
         <div className="theme-layout">
             <div className="container-fluid pdng0">
@@ -25,13 +38,15 @@ export function Register() {
                         <div className="login-reg-bg">
                             <div className="log-reg-area sign">
                                 <h2 className="log-title">Register</h2>
-                                <form>
+                                <form onSubmit={(ev) => submitHandler(ev, state)}>
                                     <div className="form-group">
                                         <input
                                             type="text"
                                             required="required"
                                             id="firstName"
                                             name="firstName"
+                                            value={state.firstName}
+                                            onChange={(ev) => changeHandler(ev)}
                                         />
                                         <label className="control-label" htmlFor="firstName">
                                             First Name
@@ -45,6 +60,8 @@ export function Register() {
                                             required="required"
                                             id="lastName"
                                             name="lastName"
+                                            value={state.lastName}
+                                            onChange={(ev) => changeHandler(ev)}
                                         />
                                         <label className="control-label" htmlFor="lastName">
                                             Last Name
@@ -53,15 +70,16 @@ export function Register() {
                                     </div>
 
                                     <div className="form-group">
-                                        <input type="text" required="required" id="email" name="email" />
+                                        <input
+                                            type="text"
+                                            required="required"
+                                            id="email"
+                                            name="email"
+                                            value={state.email}
+                                            onChange={(ev) => changeHandler(ev)}
+                                        />
                                         <label className="control-label" htmlFor="email">
-                                            <a
-                                                href="https://wpkixx.com/cdn-cgi/l/email-protection"
-                                                className="__cf_email__"
-                                                data-cfemail="6c29010d05002c"
-                                            >
-                                                Email
-                                            </a>
+                                            Email
                                         </label>
                                         <i className="mtrl-select" />
                                     </div>
@@ -72,6 +90,8 @@ export function Register() {
                                             required="required"
                                             id="password"
                                             name="password"
+                                            value={state.password}
+                                            onChange={(ev) => changeHandler(ev)}
                                         />
                                         <label className="control-label" htmlFor="password">
                                             Password
@@ -85,6 +105,8 @@ export function Register() {
                                             required="required"
                                             id="repassword"
                                             name="repassword"
+                                            value={state.repassword}
+                                            onChange={(ev) => changeHandler(ev)}
                                         />
                                         <label className="control-label" htmlFor="repassword">
                                             Confirm password
@@ -94,12 +116,14 @@ export function Register() {
 
                                     <div className="form-radio">
                                         <div className="radio">
-                                            <label htmlFor="gender">
+                                            <label htmlFor="gender-male">
                                                 <input
                                                     type="radio"
-                                                    name="radio"
-                                                    defaultChecked="checked"
-                                                    id="gender"
+                                                    name="gender"
+                                                    id="gender-male"
+                                                    value="male"
+                                                    checked={state.gender === "male"}
+                                                    onChange={(ev) => changeHandler(ev)}
                                                 />
                                                 <i className="check-box" />
                                                 Male
@@ -107,8 +131,15 @@ export function Register() {
                                         </div>
 
                                         <div className="radio">
-                                            <label htmlFor="gender">
-                                                <input type="radio" name="radio" id="gender" />
+                                            <label htmlFor="gender-female">
+                                                <input
+                                                    type="radio"
+                                                    name="gender"
+                                                    id="gender-female"
+                                                    value="female"
+                                                    checked={state.gender === "female"}
+                                                    onChange={(ev) => changeHandler(ev)}
+                                                />
                                                 <i className="check-box" />
                                                 Female
                                             </label>
@@ -117,7 +148,12 @@ export function Register() {
 
                                     <div className="checkbox">
                                         <label>
-                                            <input type="checkbox" defaultChecked="checked" />
+                                            <input
+                                                type="checkbox"
+                                                defaultChecked="checked"
+                                                value={state.value}
+                                                onChange={(ev) => changeHandler(ev)}
+                                            />
                                             <i className="check-box" />
                                             Accept Terms &amp; Conditions ?
                                         </label>
@@ -128,7 +164,7 @@ export function Register() {
                                     </Link>
 
                                     <div className="submit-btns">
-                                        <button className="mtr-btn signup" type="button">
+                                        <button className="mtr-btn signup" type="submit">
                                             <span>Register</span>
                                         </button>
                                     </div>
