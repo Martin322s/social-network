@@ -1,17 +1,10 @@
 import { useReducer } from "react";
 import { Link } from "react-router-dom";
 import { initialState, reducer } from "./data/registerData";
+import { changeHandler, termsStatusChange } from "./utils/utils";
 
 export function Register() {
     const [state, dispatch] = useReducer(reducer, initialState);
-
-    const changeHandler = (ev) => {
-        dispatch({ type: "SET_FIELD", field: ev.target.name, value: ev.target.value });
-    }
-
-    const termsStatusChange = (ev) => {
-        dispatch({ type: "TAC_CHECK", field: ev.target.name, value: ev.target.checked });
-    }
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
@@ -50,7 +43,7 @@ export function Register() {
                                             id="firstName"
                                             name="firstName"
                                             value={state.firstName}
-                                            onChange={(ev) => changeHandler(ev)}
+                                            onChange={(ev) => changeHandler(ev, dispatch)}
                                         />
                                         <label className="control-label" htmlFor="firstName">
                                             First Name
@@ -65,7 +58,7 @@ export function Register() {
                                             id="lastName"
                                             name="lastName"
                                             value={state.lastName}
-                                            onChange={(ev) => changeHandler(ev)}
+                                            onChange={(ev) => changeHandler(ev, dispatch)}
                                         />
                                         <label className="control-label" htmlFor="lastName">
                                             Last Name
@@ -80,7 +73,7 @@ export function Register() {
                                             id="email"
                                             name="email"
                                             value={state.email}
-                                            onChange={(ev) => changeHandler(ev)}
+                                            onChange={(ev) => changeHandler(ev, dispatch)}
                                         />
                                         <label className="control-label" htmlFor="email">
                                             Email
@@ -95,7 +88,7 @@ export function Register() {
                                             id="password"
                                             name="password"
                                             value={state.password}
-                                            onChange={(ev) => changeHandler(ev)}
+                                            onChange={(ev) => changeHandler(ev, dispatch)}
                                         />
                                         <label className="control-label" htmlFor="password">
                                             Password
@@ -110,7 +103,7 @@ export function Register() {
                                             id="repassword"
                                             name="repassword"
                                             value={state.repassword}
-                                            onChange={(ev) => changeHandler(ev)}
+                                            onChange={(ev) => changeHandler(ev, dispatch)}
                                         />
                                         <label className="control-label" htmlFor="repassword">
                                             Confirm password
@@ -127,7 +120,7 @@ export function Register() {
                                                     id="gender-male"
                                                     value="male"
                                                     checked={state.gender === "male"}
-                                                    onChange={(ev) => changeHandler(ev)}
+                                                    onChange={(ev) => changeHandler(ev, dispatch)}
                                                 />
                                                 <i className="check-box" />
                                                 Male
@@ -142,7 +135,7 @@ export function Register() {
                                                     id="gender-female"
                                                     value="female"
                                                     checked={state.gender === "female"}
-                                                    onChange={(ev) => changeHandler(ev)}
+                                                    onChange={(ev) => changeHandler(ev, dispatch)}
                                                 />
                                                 <i className="check-box" />
                                                 Female
@@ -156,7 +149,7 @@ export function Register() {
                                                 type="checkbox"
                                                 name="tac"
                                                 checked={state.tac}
-                                                onChange={(ev) => termsStatusChange(ev)}
+                                                onChange={(ev) => termsStatusChange(ev, dispatch)}
                                             />
                                             <i className="check-box" />
                                             Accept Terms &amp; Conditions ?
