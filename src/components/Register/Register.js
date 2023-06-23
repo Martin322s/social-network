@@ -13,7 +13,8 @@ export function Register() {
         if (Object.values(data).some(x => x === "")) {
             alert("All fields are required!");
         } else {
-            //userService();
+            userService.registerUser(data)
+                .then();
         }
     }
 
