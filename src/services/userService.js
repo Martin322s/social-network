@@ -15,6 +15,11 @@ export const registerUser = async (userData) => {
                 body: JSON.stringify(userData)
             });
             const data = await res.json();
+
+            if (res.status !== 200) {
+                throw new Error('Unexpected error in the registration process!');
+            }
+
             return data;
         }
     } catch (err) {
