@@ -3,9 +3,9 @@ const baseUrl = "http://localhost:3030/users";
 export const registerUser = async (userData) => {
     try {
         if (Object.values(userData).some(x => x === "")) {
-            throw { message: "Invalid data provided!" }
+            throw new Error ({ message: "Invalid data provided!" });
         } else if (userData.password.length < 6) {
-            throw { message: "Password should be at least 6 characters long!" }
+            throw new Error ({ message: "Password should be at least 6 characters long!" });
         } else {
             const res = await fetch(`${baseUrl}/regitser`, {
                 method: "POST",
@@ -27,7 +27,6 @@ export const registerUser = async (userData) => {
             return data;
         }
     } catch (err) {
-        
         return err;
     }
 }

@@ -2,13 +2,19 @@ import { useReducer } from "react";
 import { Link } from "react-router-dom";
 import { initialState, reducer } from "./data/registerData";
 import { changeHandler, termsStatusChange } from "./utils/utils";
+import * as userService from "../../services/userService";
 
 export function Register() {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
-        console.log(data);
+        
+        if (Object.values(data).some(x => x === "")) {
+            alert("All fields are required!");
+        } else {
+            //userService();
+        }
     }
 
     return (
