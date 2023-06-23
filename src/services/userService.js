@@ -20,6 +20,10 @@ export const registerUser = async (userData) => {
                 throw new Error('Unexpected error in the registration process!');
             }
 
+            if (!data.token) {
+                throw new Error('Token not found in the response');
+            }
+
             return data;
         }
     } catch (err) {
