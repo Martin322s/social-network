@@ -14,17 +14,8 @@ export const registerUser = async (userData) => {
                 },
                 body: JSON.stringify(userData)
             });
-            const data = await res.json();
 
-            if (res.status !== 200) {
-                throw new Error('Unexpected error in the registration process!');
-            }
-
-            if (!data.accessToken) {
-                throw new Error('Token not found in the response');
-            }
-
-            return data;
+            return await res.json();
         }
     } catch (err) {
         return err;
