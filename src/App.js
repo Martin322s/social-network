@@ -6,19 +6,22 @@ import { Register } from "./components/Register/Register";
 import { Home } from "./components/Home/Home";
 import { Error } from "./components/Error Page/ErrorPage";
 import { Profile } from "./components/Profile/Profile";
+import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
     return (
         <>
-            <Header />
-            <Routes>
-                <Route path="/*" element={<Home />} />
-                <Route path="/profile/*" element={<Profile />} />
-                <Route path="/users/login" element={<Login />} />
-                <Route path="/users/register" element={<Register />} />
-                <Route path="*" element={<Error />} />
-            </Routes>
-            <Footer />
+            <AuthProvider>
+                <Header />
+                <Routes>
+                    <Route path="/*" element={<Home />} />
+                    <Route path="/profile/*" element={<Profile />} />
+                    <Route path="/users/login" element={<Login />} />
+                    <Route path="/users/register" element={<Register />} />
+                    <Route path="*" element={<Error />} />
+                </Routes>
+                <Footer />
+            </AuthProvider>
         </>
     );
 }
