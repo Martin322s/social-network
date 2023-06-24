@@ -7,7 +7,7 @@ export const registerUser = async (userData) => {
         } else if (userData.password.length < 6) {
             throw new Error ({ message: "Password should be at least 6 characters long!" });
         } else {
-            const res = await fetch(`${baseUrl}/regitser`, {
+            const res = await fetch(`${baseUrl}/register`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'

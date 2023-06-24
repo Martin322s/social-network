@@ -14,7 +14,9 @@ export function Register() {
             alert("All fields are required!");
         } else {
             userService.registerUser(data)
-                .then();
+                .then(result => {
+                    console.log(result);
+                });
         }
     }
 
