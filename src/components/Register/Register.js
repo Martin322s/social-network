@@ -1,21 +1,24 @@
 import { useReducer } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { initialState, reducer } from "./data/registerData";
 import { changeHandler, termsStatusChange } from "./utils/utils";
 import * as userService from "../../services/userService";
 
 export function Register() {
     const [state, dispatch] = useReducer(reducer, initialState);
+    const navigate = useNavigate();
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
-        
+
         if (Object.values(data).some(x => x === "")) {
             alert("All fields are required!");
+        } else if (state.tac === false) {
+            alert("Please, accept all terms and conditions!")
         } else {
             userService.registerUser(data)
-                .then(result => {
-                    console.log(result);
+                .then(() => {
+                    navigate('/');
                 });
         }
     }
