@@ -3,8 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { initialState, reducer } from "./data/registerData";
 import { changeHandler, termsStatusChange } from "./utils/utils";
 import * as userService from "../../services/userService";
+import { AuthContext } from "../../contexts/AuthContext";
+import { useContext } from "react";
 
 export function Register() {
+    const { userLogin } = useContext(AuthContext);
     const [state, dispatch] = useReducer(reducer, initialState);
     const navigate = useNavigate();
 
@@ -17,7 +20,8 @@ export function Register() {
             alert("Please, accept all terms and conditions!")
         } else {
             userService.registerUser(data)
-                .then(() => {
+                .then((result) => {
+                    userLogin(result);
                     navigate('/');
                 });
         }
