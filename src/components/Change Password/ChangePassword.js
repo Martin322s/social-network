@@ -11,10 +11,10 @@ export function ChangePassword() {
                     </h5>
                     <form>
                         <div className="form-group">
-                            <input 
-                                type="password" 
-                                id="password" 
-                                required="required" 
+                            <input
+                                type="password"
+                                id="password"
+                                required="required"
                             />
                             <label className="control-label" htmlFor="password">
                                 New password
@@ -22,10 +22,10 @@ export function ChangePassword() {
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <input 
+                            <input
                                 type="password"
                                 name="repassword"
-                                required="required" 
+                                required="required"
                             />
                             <label className="control-label" htmlFor="repassword">
                                 Confirm password
@@ -33,10 +33,10 @@ export function ChangePassword() {
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <input 
-                                type="password" 
+                            <input
+                                type="password"
                                 name="oldpassword"
-                                required="required" 
+                                required="required"
                             />
                             <label className="control-label" htmlFor="oldpassword">
                                 Current password
