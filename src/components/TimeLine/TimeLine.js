@@ -15,6 +15,7 @@ export function TimeLine() {
                                     rows={2}
                                     placeholder="write something"
                                     defaultValue={""}
+                                    name="opinion"
                                 />
                                 <div className="attachments">
                                     <ul>
@@ -27,7 +28,7 @@ export function TimeLine() {
                                         <li>
                                             <i className="fa fa-video-camera" />
                                             <label className="fileContainer" htmlFor="video">
-                                                <input type="file" id="video "/>
+                                                <input type="file" id="video"/>
                                             </label>
                                         </li>
                                         <li>
@@ -217,6 +218,7 @@ export function TimeLine() {
                                             <textarea
                                                 placeholder="Post your comment"
                                                 defaultValue={""}
+                                                name="comment"
                                             />
                                             <button type="submit">Post</button>
                                         </form>
@@ -338,6 +340,7 @@ export function TimeLine() {
                                             <textarea
                                                 placeholder="Post your comment"
                                                 defaultValue={""}
+                                                name="comment"
                                             />
                                             <button type="submit">Post</button>
                                         </form>

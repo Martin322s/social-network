@@ -149,7 +149,7 @@ export function Messages() {
                             </ul>
                             <div className="message-text-container">
                                 <form method="post">
-                                    <textarea defaultValue={""} />
+                                    <textarea defaultValue={""} name="message"/>
                                     <button title="send">
                                         <i className="fa fa-paper-plane" />
                                     </button>

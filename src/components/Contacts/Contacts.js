@@ -65,6 +65,7 @@ export function Contacts() {
                                         id="message"
                                         required="required"
                                         defaultValue={""}
+                                        name="message"
                                     />
                                     <label className="control-label" htmlFor="message">
                                         Message
