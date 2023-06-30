@@ -9638,4 +9638,6 @@ aside.sidebar.full-style {
     text-transform: uppercase;
 }
 
-
+.password-length {
+    margin-bottom: 15px;
+}

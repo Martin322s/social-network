@@ -110,6 +110,21 @@ export function Register() {
                                             Password
                                         </label>
                                         <i className="mtrl-select" />
+                                        <p 
+                                            className="password-length"
+                                        >
+                                            Password must contain at least 6 characters.
+                                        </p>
+                                        <p 
+                                            className="password-length"
+                                        >
+                                            Password must contain upper / lower case letters.
+                                        </p>
+                                        <p 
+                                            className="password-length"
+                                        >
+                                            Password must contain at least one numeric character.
+                                        </p>
                                     </div>
 
                                     <div className="form-group">
