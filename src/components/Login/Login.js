@@ -6,7 +6,10 @@ import { changeHandler } from "./utils/utils";
 export function Login() {
     const [state, dispatch] = useReducer(reducer, initialValue);
 
-    console.log(state);
+    const submitHandler = (ev, data) => {
+        ev.preventDefault();
+        console.log(data);
+    }
 
     return (
         <div className="theme-layout">
@@ -38,7 +41,7 @@ export function Login() {
                                         Join now
                                     </Link>
                                 </p>
-                                <form>
+                                <form onSubmit={(ev) => submitHandler(ev ,state)}>
                                     <div className="form-group">
                                         <input 
                                             type="text" 
@@ -73,7 +76,7 @@ export function Login() {
                                     </Link>
 
                                     <div className="submit-btns">
-                                        <button className="mtr-btn signin" type="button">
+                                        <button className="mtr-btn signin" type="submit">
                                             <span>Login</span>
                                         </button>
                                     </div>

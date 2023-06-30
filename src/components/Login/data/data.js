@@ -6,7 +6,7 @@ export const initialValue = {
 export function reducer(state, action) {
     switch(action.type) {
         case "SET_FIELD": return {
-            ...state, [action.name]: action.value
+            ...state, [action.field]: action.value
         }
         default: console.log('Invalid action type provided!');
     }
