@@ -1,6 +1,13 @@
+import { useReducer } from "react";
 import { Link } from "react-router-dom";
+import { initialValue, reducer } from "./data/data";
+import { changeHandler } from "./utils/utils";
 
 export function Login() {
+    const [state, dispatch] = useReducer(reducer, initialValue);
+
+    console.log(state);
+
     return (
         <div className="theme-layout">
             <div className="container-fluid pdng0">
@@ -38,6 +45,8 @@ export function Login() {
                                             id="email"
                                             name="email"
                                             required="required"
+                                            value={state.email}
+                                            onChange={(ev) => changeHandler(ev, dispatch)}
                                         />
                                         <label className="control-label" htmlFor="email">
                                             Email
@@ -51,6 +60,8 @@ export function Login() {
                                             name="password"
                                             required="required"
                                             id="password"
+                                            value={state.password}
+                                            onChange={(ev) => changeHandler(ev, dispatch)}
                                         />
                                         <label className="control-label" htmlFor="password">
                                             Password
