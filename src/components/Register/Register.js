@@ -117,18 +117,30 @@ export function Register() {
                                         </label>
                                         <i className="mtrl-select" />
                                         <p
-                                            className="password-length"
+                                            className={state.password.length >= 6 ? "password-length correct" : "password-length"}
                                         >
+                                            {state.password.length >= 6
+                                                ? <i className={state.password.length >= 6
+                                                    ?
+                                                    "fas fa-check correct"
+                                                    :
+                                                    "fas fa-check"
+                                                }>
+                                                </i>
+                                                : null
+                                            }
                                             Password must contain at least 6 characters.
                                         </p>
                                         <p
-                                            className="password-length"
+                                            className="password-cases correct"
                                         >
+                                            <i class="fas fa-check correct"></i>
                                             Password must contain upper / lower case letters.
                                         </p>
                                         <p
-                                            className="password-length"
+                                            className="password-numeric correct"
                                         >
+                                            <i class="fas fa-check correct"></i>
                                             Password must contain at least one numeric character.
                                         </p>
                                     </div>

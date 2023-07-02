@@ -9641,3 +9641,13 @@ aside.sidebar.full-style {
 .password-length {
     margin-bottom: 15px;
 }
+
+p.password-length i,
+p.password-cases i,
+p.password-numeric i {
+    margin-right: 5px;
+}
+
+.correct {
+    color: green;
+}
