@@ -22,7 +22,7 @@ export function Register() {
             userService.registerUser(data)
                 .then((result) => {
                     userLogin(result);
-                    navigate('/');
+                    navigate('/', { replace: true });
                 });
         }
     }
