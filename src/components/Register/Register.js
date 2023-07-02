@@ -10,6 +10,7 @@ export function Register() {
     const { userLogin } = useContext(AuthContext);
     const [state, dispatch] = useReducer(reducer, initialState);
     const navigate = useNavigate();
+    let regex = new RegExp('[A-Za-z]+', 'g');
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
@@ -117,7 +118,12 @@ export function Register() {
                                         </label>
                                         <i className="mtrl-select" />
                                         <p
-                                            className={state.password.length >= 6 ? "password-length correct" : "password-length"}
+                                            className={state.password.length >= 6
+                                                ?
+                                                "password-length correct"
+                                                :
+                                                "password-length"
+                                            }
                                         >
                                             {state.password.length >= 6
                                                 ? <i className={state.password.length >= 6
@@ -132,15 +138,26 @@ export function Register() {
                                             Password must contain at least 6 characters.
                                         </p>
                                         <p
-                                            className="password-cases correct"
+                                            className={regex.test(state.password)
+                                                ?
+                                                "password-cases correct"
+                                                :
+                                                "password-cases"
+                                            }
                                         >
-                                            <i class="fas fa-check correct"></i>
+                                            <i className="fas fa-check correct"></i>
+                                            {regex.test(state.password)
+                                                ?
+                                                null
+                                                :
+                                                null
+                                            }
                                             Password must contain upper / lower case letters.
                                         </p>
                                         <p
                                             className="password-numeric correct"
                                         >
-                                            <i class="fas fa-check correct"></i>
+                                            <i className="fas fa-check correct"></i>
                                             Password must contain at least one numeric character.
                                         </p>
                                     </div>
