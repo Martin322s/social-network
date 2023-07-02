@@ -21,9 +21,15 @@ export function Register() {
         } else {
             userService.registerUser(data)
                 .then((result) => {
-                    userLogin(result);
-                    navigate('/', { replace: true });
-                });
+                    if (result.message) {
+                        console.log(result);
+                        throw result.message;
+                    } else {
+                        userLogin(result);
+                        navigate('/', { replace: true });
+                    }
+                })
+                .catch(err => alert(err));
         }
     }
 
@@ -110,17 +116,17 @@ export function Register() {
                                             Password
                                         </label>
                                         <i className="mtrl-select" />
-                                        <p 
+                                        <p
                                             className="password-length"
                                         >
                                             Password must contain at least 6 characters.
                                         </p>
-                                        <p 
+                                        <p
                                             className="password-length"
                                         >
                                             Password must contain upper / lower case letters.
                                         </p>
-                                        <p 
+                                        <p
                                             className="password-length"
                                         >
                                             Password must contain at least one numeric character.
