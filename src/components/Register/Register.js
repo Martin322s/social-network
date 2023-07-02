@@ -11,7 +11,7 @@ export function Register() {
     const [state, dispatch] = useReducer(reducer, initialState);
     const navigate = useNavigate();
     let regex = new RegExp('[A-Za-z]+', 'g');
-
+    
     const submitHandler = (ev, data) => {
         ev.preventDefault();
 
@@ -145,13 +145,13 @@ export function Register() {
                                                 "password-cases"
                                             }
                                         >
-                                            <i className="fas fa-check correct"></i>
-                                            {regex.test(state.password)
+                                            <i className={regex.test(state.password)
                                                 ?
-                                                null
+                                                "fas fa-check correct vis"
                                                 :
-                                                null
-                                            }
+                                                "fas fa-check correct hid"
+                                            }>
+                                            </i>
                                             Password must contain upper / lower case letters.
                                         </p>
                                         <p

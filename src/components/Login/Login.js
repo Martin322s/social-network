@@ -1,14 +1,24 @@
 import { useReducer } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { initialValue, reducer } from "./data/data";
 import { changeHandler } from "./utils/utils";
+import * as userService from "../../services/userService";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export function Login() {
     const [state, dispatch] = useReducer(reducer, initialValue);
+    const { userLogin } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
-        console.log(data);
+        
+        userService.loginUser(data)
+            .then(result => {
+                userLogin(result);
+                navigate('/', { replace: true });
+            });
     }
 
     return (
