@@ -3,6 +3,9 @@ import { useState } from "react";
 import * as userService from "../../services/userService";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
+import { useReducer } from "react";
+import { initialState, reducer } from "./data/data";
+import { changeHandler } from "./utils/utils";
 
 export function EditProfile() {
     const [userData, setUser] = useState({
@@ -14,6 +17,13 @@ export function EditProfile() {
             .then(user => setUser(user));
     }, [user._id]);
 
+    const [state, dispatch] = useReducer(reducer, initialState);
+
+    const submitHandler = (ev, data) => {
+        ev.preventDefault();
+        console.log(data);
+    }
+
     return (
         <div className="col-lg-6">
             <div className="central-meta">
@@ -21,7 +31,7 @@ export function EditProfile() {
                     <h5 className="f-title">
                         <i className="ti-info-alt" /> Edit Basic Information
                     </h5>
-                    <form>
+                    <form onSubmit={(ev) => submitHandler(ev, state)}>
                         <div className="form-group half">
                             <input
                                 type="text"
@@ -62,7 +72,10 @@ export function EditProfile() {
                             <input
                                 type="text"
                                 id="phone"
+                                name="phone"
                                 required="required"
+                                value={state.phone}
+                                onChange={(ev) => changeHandler(ev, dispatch)}
                             />
                             <label className="control-label" htmlFor="phone">
                                 Phone
@@ -72,7 +85,10 @@ export function EditProfile() {
                         <div className="dob">
                             <div className="form-group">
                                 <select>
-                                    <option defaultValue="Day">Day</option>
+                                    <option
+                                        value={state.day}
+                                        onChange={(ev) => changeHandler(ev, dispatch)}
+                                    >Day</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -108,7 +124,10 @@ export function EditProfile() {
                             </div>
                             <div className="form-group">
                                 <select>
-                                    <option defaultValue="month">Month</option>
+                                    <option
+                                        value={state.month}
+                                        onChange={(ev) => changeHandler(ev, dispatch)}
+                                    >Month</option>
                                     <option>Jan</option>
                                     <option>Feb</option>
                                     <option>Mar</option>
@@ -125,7 +144,10 @@ export function EditProfile() {
                             </div>
                             <div className="form-group">
                                 <select>
-                                    <option defaultValue="year">Year</option>
+                                    <option
+                                        value={state.year}
+                                        onChange={(ev) => changeHandler(ev, dispatch)}
+                                    >Year</option>
                                     <option>2000</option>
                                     <option>2001</option>
                                     <option>2002</option>
@@ -165,7 +187,13 @@ export function EditProfile() {
                             </div>
                         </div>
                         <div className="form-group">
-                            <input type="text" required="required" />
+                            <input
+                                type="text"
+                                name="city"
+                                required="required"
+                                value={state.city}
+                                onChange={(ev) => changeHandler(ev, dispatch)}
+                            />
                             <label className="control-label" htmlFor="input">
                                 City
                             </label>
@@ -173,7 +201,10 @@ export function EditProfile() {
                         </div>
                         <div className="form-group">
                             <select>
-                                <option defaultValue="country">Country</option>
+                                <option
+                                    value={state.country}
+                                    onChange={(ev) => changeHandler(ev, dispatch)}
+                                >Country</option>
                                 <option defaultValue="AFG">Afghanistan</option>
                                 <option defaultValue="ALA">Ƭand Islands</option>
                                 <option defaultValue="ALB">Albania</option>
@@ -440,7 +471,9 @@ export function EditProfile() {
                                 rows={4}
                                 id="textarea"
                                 required="required"
-                                defaultValue={""}
+                                name="about"
+                                value={state.about}
+                                onChange={(ev) => changeHandler(ev, dispatch)}
                             />
                             <label className="control-label" htmlFor="textarea">
                                 About Me

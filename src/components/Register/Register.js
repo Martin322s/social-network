@@ -27,7 +27,7 @@ export function Register() {
                         throw result.message;
                     } else {
                         userLogin(result);
-                        navigate('/', { replace: true });
+                        navigate('/profile/edit', { replace: true });
                     }
                 })
                 .catch(err => alert(err));
