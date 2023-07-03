@@ -54,7 +54,6 @@ export const logoutUser = (token) => fetch(`${baseUrl}/logout`, {
 });
 
 export const getUser = async (userId) => {
-    let res = await fetch(`${baseUrl}/user/userId`);
-    let data = await res.json();
-    return data;
+    let res = await fetch(`${baseUrl}/user/${userId}`);
+    return res.json();
 }
