@@ -1,4 +1,16 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import * as userService from "../../services/userService";
+
 export function EditProfile() {
+    const [user, setUser] = useState({
+
+    });
+
+    useEffect(() => {
+
+    }, []);
+
     return (
         <div className="col-lg-6">
             <div className="central-meta">

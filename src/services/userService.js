@@ -52,3 +52,9 @@ export const logoutUser = (token) => fetch(`${baseUrl}/logout`, {
         'X-Authorization': token
     }
 });
+
+export const getUser = async (userId) => {
+    let res = await fetch(`${baseUrl}/user/userId`);
+    let data = await res.json();
+    return data;
+}
