@@ -89,37 +89,37 @@ export function EditProfile() {
                                         value={state.day}
                                         onChange={(ev) => changeHandler(ev, dispatch)}
                                     >Day</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                    <option>13</option>
-                                    <option>14</option>
-                                    <option>15</option>
-                                    <option>16</option>
-                                    <option>17</option>
-                                    <option>18</option>
-                                    <option>19</option>
-                                    <option>20</option>
-                                    <option>21</option>
-                                    <option>22</option>
-                                    <option>23</option>
-                                    <option>24</option>
-                                    <option>25</option>
-                                    <option>26</option>
-                                    <option>27</option>
-                                    <option>28</option>
-                                    <option>29</option>
-                                    <option>30</option>
-                                    <option>31</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
                                 </select>
                             </div>
                             <div className="form-group">
@@ -200,11 +200,11 @@ export function EditProfile() {
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <select>
-                                <option
-                                    value={state.country}
-                                    onChange={(ev) => changeHandler(ev, dispatch)}
-                                >Country</option>
+                            <select
+                                value={state.country}
+                                onChange={(ev) => changeHandler(ev, dispatch)}
+                            >
+                                <option>Country</option>
                                 <option defaultValue="AFG">Afghanistan</option>
                                 <option defaultValue="ALA">Ƭand Islands</option>
                                 <option defaultValue="ALB">Albania</option>
@@ -484,7 +484,7 @@ export function EditProfile() {
                             <button type="button" className="mtr-btn">
                                 <span>Cancel</span>
                             </button>
-                            <button type="button" className="mtr-btn">
+                            <button type="submit" className="mtr-btn">
                                 <span>Update</span>
                             </button>
                         </div>
