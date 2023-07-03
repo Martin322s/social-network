@@ -1,15 +1,18 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import * as userService from "../../services/userService";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export function EditProfile() {
-    const [user, setUser] = useState({
-
+    const [userData, setUser] = useState({
     });
+    const { user } = useContext(AuthContext);
 
     useEffect(() => {
-
-    }, []);
+        userService.getUser(user._id)
+            .then(user => setUser(user));
+    }, [user._id]);
 
     return (
         <div className="col-lg-6">
@@ -20,10 +23,10 @@ export function EditProfile() {
                     </h5>
                     <form>
                         <div className="form-group half">
-                            <input 
-                                type="text" 
-                                id="firstName" 
-                                required="required" 
+                            <input
+                                type="text"
+                                id="firstName"
+                                required="required"
                             />
                             <label className="control-label" htmlFor="firstName">
                                 First Name
@@ -31,10 +34,10 @@ export function EditProfile() {
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group half">
-                            <input 
-                                type="text" 
+                            <input
+                                type="text"
                                 required="required"
-                                id="lastName" 
+                                id="lastName"
                             />
                             <label className="control-label" htmlFor="lastName">
                                 Last Name
@@ -42,10 +45,10 @@ export function EditProfile() {
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <input 
+                            <input
                                 type="text"
                                 id="email"
-                                required="required" 
+                                required="required"
                             />
                             <label className="control-label" htmlFor="email">
                                 Email
@@ -53,7 +56,7 @@ export function EditProfile() {
                             <i className="mtrl-select" />
                         </div>
                         <div className="form-group">
-                            <input 
+                            <input
                                 type="text"
                                 id="phone"
                                 required="required"
@@ -138,9 +141,9 @@ export function EditProfile() {
                         <div className="form-radio">
                             <div className="radio">
                                 <label>
-                                    <input 
-                                        type="radio" 
-                                        defaultChecked="checked" 
+                                    <input
+                                        type="radio"
+                                        defaultChecked="checked"
                                         name="radio"
                                     />
                                     <i className="check-box" />
@@ -149,9 +152,9 @@ export function EditProfile() {
                             </div>
                             <div className="radio">
                                 <label>
-                                    <input 
-                                        type="radio" 
-                                        name="radio" 
+                                    <input
+                                        type="radio"
+                                        name="radio"
                                     />
                                     <i className="check-box" />
                                     Female
