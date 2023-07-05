@@ -5,9 +5,11 @@ import { AuthContext } from "../../contexts/AuthContext";
 import { useReducer } from "react";
 import { initialState, reducer } from "./data/data";
 import { changeHandler } from "./utils/utils";
+import { useNavigate } from "react-router-dom";
 
 export function EditProfile() {
     const { user } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
         userService.getUser(user._id)
@@ -22,9 +24,11 @@ export function EditProfile() {
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
-        
+
+        console.log(data);
+
         userService.updateUserInfo(user._id, data, user.accessToken)
-            .then(result => console.log(result));
+            .then(() => navigate('/profile', { replace: true }));
     }
 
     return (
