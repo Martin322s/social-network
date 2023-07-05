@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useState } from "react";
 import * as userService from "../../services/userService";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
@@ -8,13 +7,15 @@ import { initialState, reducer } from "./data/data";
 import { changeHandler } from "./utils/utils";
 
 export function EditProfile() {
-    const [userData, setUser] = useState({
-    });
     const { user } = useContext(AuthContext);
 
     useEffect(() => {
         userService.getUser(user._id)
-            .then(user => setUser(user));
+            .then(user => {
+                for (let key in user) {
+                    dispatch({ type: 'SET_FIELD', field: key, value: user[key] });
+                }
+            });
     }, [user._id]);
 
     const [state, dispatch] = useReducer(reducer, initialState);
@@ -37,7 +38,9 @@ export function EditProfile() {
                                 type="text"
                                 id="firstName"
                                 required="required"
-                                defaultValue={userData.firstName}
+                                name="firstName"
+                                value={state.firstName}
+                                onChange={(ev) => changeHandler(ev, dispatch)}
                             />
                             <label className="control-label" htmlFor="firstName">
                                 First Name
@@ -49,7 +52,9 @@ export function EditProfile() {
                                 type="text"
                                 required="required"
                                 id="lastName"
-                                defaultValue={userData.lastName}
+                                name="lastName"
+                                value={state.lastName}
+                                onChange={(ev) => changeHandler(ev, dispatch)}
                             />
                             <label className="control-label" htmlFor="lastName">
                                 Last Name
@@ -60,8 +65,10 @@ export function EditProfile() {
                             <input
                                 type="text"
                                 id="email"
+                                name="email"
                                 required="required"
-                                defaultValue={userData.email}
+                                value={state.email}
+                                onChange={(ev) => changeHandler(ev, dispatch)}
                             />
                             <label className="control-label" htmlFor="email">
                                 Email
@@ -171,8 +178,10 @@ export function EditProfile() {
                                 <label>
                                     <input
                                         type="radio"
-                                        defaultChecked="checked"
-                                        name="radio"
+                                        value="male"
+                                        checked={state.gender === "male"}
+                                        onChange={(ev) => changeHandler(ev, dispatch)}
+                                        name="gender"
                                     />
                                     <i className="check-box" />
                                     Male
@@ -182,7 +191,10 @@ export function EditProfile() {
                                 <label>
                                     <input
                                         type="radio"
-                                        name="radio"
+                                        name="gender"
+                                        value="female"
+                                        checked={state.gender === "female"}
+                                        onChange={(ev) => changeHandler(ev, dispatch)}
                                     />
                                     <i className="check-box" />
                                     Female
