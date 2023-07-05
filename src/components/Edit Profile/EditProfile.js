@@ -22,7 +22,9 @@ export function EditProfile() {
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
-        console.log(data);
+        
+        userService.updateUserInfo(user._id, data, user.accessToken)
+            .then(result => console.log(result));
     }
 
     return (
