@@ -84,11 +84,12 @@ export function EditProfile() {
                         </div>
                         <div className="dob">
                             <div className="form-group">
-                                <select>
-                                    <option
-                                        value={state.day}
-                                        onChange={(ev) => changeHandler(ev, dispatch)}
-                                    >Day</option>
+                                <select
+                                    name="day"
+                                    value={state.day}
+                                    onChange={(ev) => changeHandler(ev, dispatch)}
+                                >
+                                    <option>Day</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -123,11 +124,12 @@ export function EditProfile() {
                                 </select>
                             </div>
                             <div className="form-group">
-                                <select>
-                                    <option
-                                        value={state.month}
-                                        onChange={(ev) => changeHandler(ev, dispatch)}
-                                    >Month</option>
+                                <select
+                                    name="month"
+                                    value={state.month}
+                                    onChange={(ev) => changeHandler(ev, dispatch)}
+                                >
+                                    <option>Month</option>
                                     <option>Jan</option>
                                     <option>Feb</option>
                                     <option>Mar</option>
@@ -143,11 +145,12 @@ export function EditProfile() {
                                 </select>
                             </div>
                             <div className="form-group">
-                                <select>
-                                    <option
-                                        value={state.year}
-                                        onChange={(ev) => changeHandler(ev, dispatch)}
-                                    >Year</option>
+                                <select
+                                    name="year"
+                                    value={state.year}
+                                    onChange={(ev) => changeHandler(ev, dispatch)}
+                                >
+                                    <option>Year</option>
                                     <option>2000</option>
                                     <option>2001</option>
                                     <option>2002</option>
@@ -201,6 +204,7 @@ export function EditProfile() {
                         </div>
                         <div className="form-group">
                             <select
+                                name="country"
                                 value={state.country}
                                 onChange={(ev) => changeHandler(ev, dispatch)}
                             >
