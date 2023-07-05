@@ -57,3 +57,15 @@ export const getUser = async (userId) => {
     let res = await fetch(`${baseUrl}/user/${userId}`);
     return res.json();
 }
+
+export const updateUserInfo = (userId, userData, token) => {
+    return fetch(`${baseUrl}/update/${userId}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+            "X-Authorization": token
+        },
+        body: JSON.stringify(userData)
+    })
+        .then(res => res.json());
+}
