@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import * as userService from "../../services/userService";
 
@@ -27,12 +26,7 @@ export function About() {
                     <div className="d-flex flex-row mt-2">
                         <ul className="nav nav-tabs nav-tabs--vertical nav-tabs--left">
                             <li className="nav-item">
-                                <Link
-                                    to="/"
-                                    className="nav-link active"
-                                >
-                                    Basic info
-                                </Link>
+                                Basic info
                             </li>
                         </ul>
                         <div className="tab-content">
