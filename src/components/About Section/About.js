@@ -12,7 +12,6 @@ export function About() {
             .then(result => setUser(result));
     }, [user._id]);
 
-    console.log(userData);
     return (
         <div className="col-lg-6">
             <div className="central-meta">
@@ -22,11 +21,7 @@ export function About() {
                             <i className="ti-info-alt" /> Personal Info
                         </h5>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
+                            {userData.about}
                         </p>
                     </div>
                     <div className="d-flex flex-row mt-2">
@@ -45,19 +40,19 @@ export function About() {
                                 <ul className="basics">
                                     <li>
                                         <i className="ti-user" />
-                                        sarah grey
+                                        {`${userData.firstName} ${userData.lastName}`}
                                     </li>
                                     <li>
                                         <i className="ti-map-alt" />
-                                        live in Dubai
+                                        lives in {`${userData.city}, ${userData.country}`}
                                     </li>
                                     <li>
                                         <i className="ti-mobile" />
-                                        +1-234-345675
+                                        {userData.phone}
                                     </li>
                                     <li>
                                         <i className="ti-email" />
-                                        Lorem ipsum dolor sit amet.
+                                        {userData.email?.toLowerCase()}
                                     </li>
                                 </ul>
                             </div>
