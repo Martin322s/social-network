@@ -1,6 +1,18 @@
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthContext";
+import * as userService from "../../services/userService";
 
 export function About() {
+    const { user } = useContext(AuthContext);
+    const [userData, setUser] = useState({});
+
+    useEffect(() => {
+        userService.getUser(user._id)
+            .then(result => setUser(result));
+    }, [user._id]);
+
+    console.log(userData);
     return (
         <div className="col-lg-6">
             <div className="central-meta">
