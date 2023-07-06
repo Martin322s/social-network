@@ -25,7 +25,7 @@ export function Shortcuts() {
                             </li>
                             <li>
                                 <i className="ti-image" />
-                                <Link to="/profile/images">Images</Link>
+                                <Link to="/profile/images/:userId">Images</Link>
                             </li>
                             <li>
                                 <i className="ti-power-off" />

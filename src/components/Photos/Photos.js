@@ -15,9 +15,14 @@ export function Photos() {
     return (
         <div className="col-lg-6">
             <div className="central-meta">
-                <ul className="photos">
-                    <Image />
-                </ul>
+                {user.images?.length > 0
+                    ?
+                    <ul className="photos">
+                        {user.images.map(x => <Image key={x} />)}
+                    </ul>
+                    :
+                    <h2>There are no images posted yet.</h2>
+                }
             </div>
         </div>
     );
