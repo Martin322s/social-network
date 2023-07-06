@@ -13,8 +13,6 @@ export function ProfileFriends() {
             .then(result => setUser(result));
     }, [user._id]);
 
-    console.log(userData);
-
     return (
         <div className="col-lg-6">
             <div className="central-meta">
@@ -24,16 +22,19 @@ export function ProfileFriends() {
                             <Link className="active" to="#frends" data-toggle="tab">
                                 My Friends
                             </Link>{" "}
-                            <span>55</span>
+                            <span>{userData.friends?.length}</span>
                         </li>
                     </ul>
                     <div className="tab-content">
                         <div className="tab-pane active fade show " id="frends">
-                            <ul className="nearby-contct">
-                                <ProfileFriend />
-                            </ul>
-
-                            <h3>There are not added friends yet.</h3>
+                            {userData.friends?.length > 0
+                                ?
+                                <ul className="nearby-contct">
+                                    {userData.friends.map(x => <ProfileFriend key={x} />)}
+                                </ul>
+                                :
+                                <h3>There are not added friends yet.</h3>
+                            }
                         </div>
                     </div>
                 </div>
