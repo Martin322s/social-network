@@ -7,14 +7,18 @@ import { Shortcuts } from "../Shortcuts/Shortcuts";
 import { ChangePassword } from "../Change Password/ChangePassword";
 import { EditProfile } from "../Edit Profile/EditProfile";
 import { Messages } from "../Messages/Messages";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export function Profile() {
+    const { user } = useContext(AuthContext);
+
     const routes = useRoutes([
         { path: "/", element: <TimeLine /> },
         { path: "/timeline", element: <TimeLine /> },
         { path: "/friends", element: <ProfileFriends /> },
         { path: "/about", element: <About /> },
-        { path: "/images", element: <Photos /> },
+        { path: "/images/:userId", element: <Photos /> },
         { path: "/password", element: <ChangePassword /> },
         { path: "/edit", element: <EditProfile /> },
         { path: "/messages-inbox", element: <Messages /> }
@@ -66,7 +70,7 @@ export function Profile() {
                                             <Link to="/profile/timeline">
                                                 time line
                                             </Link>
-                                            <Link to="/profile/images">
+                                            <Link to={`/profile/images/${user._id}`}>
                                                 Photos
                                             </Link>
                                             <Link to="/profile/friends">
