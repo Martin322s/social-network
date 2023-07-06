@@ -11,7 +11,7 @@ export function Register() {
     const [state, dispatch] = useReducer(reducer, initialState);
     const navigate = useNavigate();
     let regex = new RegExp('[A-Za-z]+', 'g');
-    
+
     const submitHandler = (ev, data) => {
         ev.preventDefault();
 
@@ -33,6 +33,8 @@ export function Register() {
                 .catch(err => alert(err));
         }
     }
+
+    console.log(regex.test(state.password) + ' ' + regex + ' ' + state.password);
 
     return (
         <div className="theme-layout">
@@ -137,13 +139,13 @@ export function Register() {
                                             }
                                             Password must contain at least 6 characters.
                                         </p>
-                                        <p
-                                            className={regex.test(state.password)
+                                        <p className={
+                                            regex.test(state.password)
                                                 ?
-                                                "password-cases correct"
+                                                "password-length correct"
                                                 :
-                                                "password-cases"
-                                            }
+                                                "password-length"
+                                        }
                                         >
                                             <i className={regex.test(state.password)
                                                 ?

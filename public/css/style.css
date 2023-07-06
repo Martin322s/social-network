@@ -9652,6 +9652,10 @@ p.password-numeric i {
     color: green;
 }
 
+p.correct-password  {
+    color: green;
+}
+
 p.password-cases i.hid {
     display: none;
 }
