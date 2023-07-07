@@ -10,7 +10,6 @@ export function Register() {
     const { userLogin } = useContext(AuthContext);
     const [state, dispatch] = useReducer(reducer, initialState);
     const navigate = useNavigate();
-    let regex = new RegExp('[A-Za-z]+', 'g');
     let numericRegExp = new RegExp('.*[0-9].*', 'g');
 
     const submitHandler = (ev, data) => {
@@ -130,23 +129,6 @@ export function Register() {
                                         >
                                             <i className="fas fa-check" />
                                             Password must contain at least 6 characters.
-                                        </p>
-                                        <p className={
-                                            regex.test(state.password)
-                                                ?
-                                                "password-length correct"
-                                                :
-                                                "password-length"
-                                        }
-                                        >
-                                            <i className={regex.test(state.password)
-                                                ?
-                                                "fas fa-check correct vis"
-                                                :
-                                                "fas fa-check correct hid"
-                                            }>
-                                            </i>
-                                            Password must contain upper / lower case letters.
                                         </p>
                                         <p
                                             className={

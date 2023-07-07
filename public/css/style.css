@@ -9649,6 +9649,7 @@ p.password-numeric i {
 }
 
 .correct {
+    margin-bottom: 15px;
     color: green;
 }
 
