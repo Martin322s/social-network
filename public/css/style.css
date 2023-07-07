@@ -9663,3 +9663,12 @@ p.password-cases i.hid {
 p.password-cases i.vis {
     display: inline;
 }
+
+.correct-visible {
+    color: green;
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}

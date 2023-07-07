@@ -11,6 +11,7 @@ export function Register() {
     const [state, dispatch] = useReducer(reducer, initialState);
     const navigate = useNavigate();
     let regex = new RegExp('[A-Za-z]+', 'g');
+    let numericRegExp = new RegExp('.*[0-9].*', 'g');
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
@@ -127,16 +128,7 @@ export function Register() {
                                                 "password-length"
                                             }
                                         >
-                                            {state.password.length >= 6
-                                                ? <i className={state.password.length >= 6
-                                                    ?
-                                                    "fas fa-check correct"
-                                                    :
-                                                    "fas fa-check"
-                                                }>
-                                                </i>
-                                                : null
-                                            }
+                                            <i className="fas fa-check" />
                                             Password must contain at least 6 characters.
                                         </p>
                                         <p className={
@@ -157,9 +149,15 @@ export function Register() {
                                             Password must contain upper / lower case letters.
                                         </p>
                                         <p
-                                            className="password-numeric correct"
+                                            className={
+                                                numericRegExp.test(state.password)
+                                                    ?
+                                                    "password-numeric correct"
+                                                    :
+                                                    "password-numeric"
+                                            }
                                         >
-                                            <i className="fas fa-check correct"></i>
+                                            <i className="fas fa-check"></i>
                                             Password must contain at least one numeric character.
                                         </p>
                                     </div>
@@ -238,7 +236,7 @@ export function Register() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
