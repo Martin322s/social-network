@@ -34,8 +34,6 @@ export function Register() {
         }
     }
 
-    console.log(regex.test(state.password) + ' ' + regex + ' ' + state.password);
-
     return (
         <div className="theme-layout">
             <div className="container-fluid pdng0">

@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function ChangePassword() {
+    const [passwords, setPassword] = useState({
+        oldPassword: "",
+        newPassword: "",
+        reNewPassword: ""
+    });
+
     return (
         <div className="col-lg-6">
             <div className="central-meta">
@@ -14,6 +21,8 @@ export function ChangePassword() {
                             <input
                                 type="password"
                                 id="password"
+                                name="newPassword"
+                                value={passwords.newPassword}
                                 required="required"
                             />
                             <label className="control-label" htmlFor="password">
@@ -24,7 +33,8 @@ export function ChangePassword() {
                         <div className="form-group">
                             <input
                                 type="password"
-                                name="repassword"
+                                name="reNewPassword"
+                                value={passwords.reNewPassword}
                                 required="required"
                             />
                             <label className="control-label" htmlFor="repassword">
@@ -35,7 +45,8 @@ export function ChangePassword() {
                         <div className="form-group">
                             <input
                                 type="password"
-                                name="oldpassword"
+                                name="oldPassword"
+                                value={passwords.oldPassword}
                                 required="required"
                             />
                             <label className="control-label" htmlFor="oldpassword">
@@ -50,7 +61,7 @@ export function ChangePassword() {
                             <button type="button" className="mtr-btn">
                                 <span>Cancel</span>
                             </button>
-                            <button type="button" className="mtr-btn">
+                            <button type="submit" className="mtr-btn">
                                 <span>Update</span>
                             </button>
                         </div>
