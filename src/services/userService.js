@@ -69,3 +69,15 @@ export const updateUserInfo = (userId, userData, token) => {
     })
         .then(res => res.json());
 }
+
+export const changePassword = (token, data, userId) => {
+    return fetch(`${baseUrl}/password/${userId}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Authorization': token
+        },
+        body: JSON.stringify(data)
+    })
+        .then(res => res.json());
+}
