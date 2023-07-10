@@ -15,6 +15,11 @@ export function ChangePassword() {
         }));
     };
 
+    const submitHandler = (ev, data) => {
+        ev.preventDefault();
+        console.log(data);
+    }
+
     return (
         <div className="col-lg-6">
             <div className="central-meta">
@@ -23,7 +28,7 @@ export function ChangePassword() {
                         <i className="ti-lock" />
                         Change Password
                     </h5>
-                    <form>
+                    <form onSubmit={(ev) => submitHandler(ev, passwords)}>
                         <div className="form-group">
                             <input
                                 type="password"
