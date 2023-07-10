@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import * as userService from "../../services/userService";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export function ChangePassword() {
+    const { user } = useContext(AuthContext);
     const [passwords, setPassword] = useState({
         oldPassword: "",
         newPassword: "",
@@ -17,7 +20,14 @@ export function ChangePassword() {
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
-        console.log(data);
+
+        userService
+            .changePassword(
+                user.accessToken,
+                { newPassword: data.newPassword, oldPassword: data.oldPassword },
+                user._id
+            )
+            .then(result => console.log(result));
     }
 
     return (
