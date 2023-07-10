@@ -8,6 +8,13 @@ export function ChangePassword() {
         reNewPassword: ""
     });
 
+    const changeHandler = (ev) => {
+        setPassword(state => ({
+            ...state,
+            [ev.target.name]: ev.target.value
+        }));
+    };
+
     return (
         <div className="col-lg-6">
             <div className="central-meta">
@@ -23,6 +30,7 @@ export function ChangePassword() {
                                 id="password"
                                 name="newPassword"
                                 value={passwords.newPassword}
+                                onChange={(ev) => changeHandler(ev)}
                                 required="required"
                             />
                             <label className="control-label" htmlFor="password">
@@ -35,6 +43,7 @@ export function ChangePassword() {
                                 type="password"
                                 name="reNewPassword"
                                 value={passwords.reNewPassword}
+                                onChange={(ev) => changeHandler(ev)}
                                 required="required"
                             />
                             <label className="control-label" htmlFor="repassword">
@@ -47,6 +56,7 @@ export function ChangePassword() {
                                 type="password"
                                 name="oldPassword"
                                 value={passwords.oldPassword}
+                                onChange={(ev) => changeHandler(ev)}
                                 required="required"
                             />
                             <label className="control-label" htmlFor="oldpassword">
