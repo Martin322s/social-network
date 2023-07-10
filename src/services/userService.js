@@ -39,7 +39,7 @@ export const loginUser = async (userData) => {
                 body: JSON.stringify(userData)
             });
 
-            return res;
+            return await res.json();
         }
     } catch (err) {
         return err;

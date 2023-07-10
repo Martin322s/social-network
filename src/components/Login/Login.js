@@ -15,18 +15,12 @@ export function Login() {
         ev.preventDefault();
 
         userService.loginUser(data)
-            .then(res => {
-                if (res.status !== 200) {
-                    alert('Invalid data provided')
-                } else {
-                    return res.json();
-                }
-            })
             .then(result => {
-                userLogin(result);
-                navigate('/', { replace: true });
-            })
-            .catch(err => console.log(err));
+                if (!result.message) {
+                    userLogin(result);
+                    navigate('/', { replace: true });
+                }
+            });
     }
 
     return (
