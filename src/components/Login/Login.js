@@ -13,12 +13,20 @@ export function Login() {
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
-        
+
         userService.loginUser(data)
+            .then(res => {
+                if (res.status !== 200) {
+                    alert('Invalid data provided')
+                } else {
+                    return res.json();
+                }
+            })
             .then(result => {
                 userLogin(result);
                 navigate('/', { replace: true });
-            });
+            })
+            .catch(err => console.log(err));
     }
 
     return (
@@ -51,10 +59,10 @@ export function Login() {
                                         Join now
                                     </Link>
                                 </p>
-                                <form onSubmit={(ev) => submitHandler(ev ,state)}>
+                                <form onSubmit={(ev) => submitHandler(ev, state)}>
                                     <div className="form-group">
-                                        <input 
-                                            type="text" 
+                                        <input
+                                            type="text"
                                             id="email"
                                             name="email"
                                             required="required"
@@ -68,7 +76,7 @@ export function Login() {
                                     </div>
 
                                     <div className="form-group">
-                                        <input 
+                                        <input
                                             type="password"
                                             name="password"
                                             required="required"

@@ -24,7 +24,7 @@ export function ChangePassword() {
         userService
             .changePassword(
                 user.accessToken,
-                { newPassword: data.newPassword, oldPassword: data.oldPassword },
+                { newPassword: data.newPassword },
                 user._id
             )
             .then(result => console.log(result));
