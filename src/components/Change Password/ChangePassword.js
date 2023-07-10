@@ -1,10 +1,11 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as userService from "../../services/userService";
 import { AuthContext } from "../../contexts/AuthContext";
 
 export function ChangePassword() {
     const { user } = useContext(AuthContext);
+    const navigate = useNavigate();
     const [passwords, setPassword] = useState({
         oldPassword: "",
         newPassword: "",
@@ -27,7 +28,10 @@ export function ChangePassword() {
                 { newPassword: data.newPassword },
                 user._id
             )
-            .then(result => console.log(result));
+            .then(result => {
+                alert('Password changed successfully');
+                navigate('/profile', { replace: true });
+            });
     }
 
     return (
