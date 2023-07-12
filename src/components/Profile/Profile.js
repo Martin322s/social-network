@@ -77,7 +77,7 @@ export function Profile() {
                         <img src="/images/resources/timeline-1.jpg" alt="profile" />
                     </figure>
                     <div className="add-btn">
-                        <span>{userData.friends.length} followers</span>
+                        <span>{userData?.friends?.length} followers</span>
                         <Link to="/">
                             Add Friend
                         </Link>
@@ -114,8 +114,8 @@ export function Profile() {
                                 <div className="timeline-info">
                                     <ul>
                                         <li className="admin-name">
-                                            <h5>{`${userData.firstName} ${userData.lastName}`}</h5>
-                                            <span>{userData.email}</span>
+                                            <h5>{`${userData?.firstName} ${userData?.lastName}`}</h5>
+                                            <span>{userData?.email}</span>
                                         </li>
                                         <li>
                                             <Link to="/profile/timeline">
