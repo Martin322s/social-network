@@ -87,6 +87,7 @@ export const updateUserPhoto = async (userId, token, photoString) => {
         method: "PATCH",
         headers: {
             'Content-Type': 'application/json',
+            'X-Authorization': token
         },
         body: JSON.stringify(photoString)
     });
