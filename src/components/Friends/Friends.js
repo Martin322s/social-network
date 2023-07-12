@@ -1,19 +1,30 @@
 import { Link } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
+import * as userService from "../../services/userService";
 
 export function Friends() {
+    const { user } = useContext(AuthContext);
+    const [userData, setUser] = useState({});
+
+    useEffect(() => {
+        userService.getUser(user._id)
+            .then(result => setUser(result));
+    }, [user._id]);
+
     return (
         <div className="col-lg-3">
             <aside className="sidebar static">
                 <div className="widget">
-                    <h4 className="widget-title">Your page</h4>
+                    <h4 className="widget-title">Personal Page</h4>
                     <div className="your-page">
                         <figure>
                             <Link to="/">
-                                <img src="/images/resources/friend-avatar9.jpg" alt="logo" />
+                                <img src={userData.imageUrl} alt="logo" />
                             </Link>
                         </figure>
                         <div className="page-meta">
-                            <Link to="/" className="underline">
+                            <Link to="/profile/timeline" className="underline">
                                 My page
                             </Link>
                         </div>
