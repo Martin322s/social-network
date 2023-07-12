@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext, useEffect, useReducer, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import * as userService from "../../services/userService";
+import * as postService from "../../services/publicationsService";
 import { initialValue, reducer } from "./data/data";
 
 export function TimeLine() {
@@ -35,7 +36,9 @@ export function TimeLine() {
 
     const submitHandler = (ev, data) => {
         ev.preventDefault();
-        console.log(data);
+        
+        postService.create(user.accessToken, data)
+            .then(result => console.log(result));
     }
 
     useEffect(() => {
