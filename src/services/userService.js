@@ -70,14 +70,26 @@ export const updateUserInfo = (userId, userData, token) => {
         .then(res => res.json());
 }
 
-export const changePassword = (token, data, userId) => {
-    return fetch(`${baseUrl}/password/${userId}`, {
+export const changePassword = async (token, data, userId) => {
+    const res = await fetch(`${baseUrl}/password/${userId}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
             'X-Authorization': token
         },
         body: JSON.stringify(data)
-    })
-        .then(res => res.json());
+    });
+    return res.json();
+}
+
+export const updateUserPhoto = async (userId, token, photoString) => {
+    const res = await fetch(`${baseUrl}/update/profile/${userId}`, {
+        method: "PATCH",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(photoString)
+    });
+
+    return res.json();
 }
