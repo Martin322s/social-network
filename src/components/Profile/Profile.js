@@ -7,7 +7,7 @@ import { Shortcuts } from "../Shortcuts/Shortcuts";
 import { ChangePassword } from "../Change Password/ChangePassword";
 import { EditProfile } from "../Edit Profile/EditProfile";
 import { Messages } from "../Messages/Messages";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import * as userService from "../../services/userService";
 
@@ -19,6 +19,14 @@ export function Profile() {
         encodeURI: '',
         decodeURI: ''
     });
+
+    useEffect(() => {
+        userService.getUser(user._id)
+            .then(result => setPhoto(state => ({
+                ...state,
+                decodeURI: result.imageUrl
+            })));
+    }, [user._id, photo.encodeURI, photo.decodeURI, photo]);
 
     const routes = useRoutes([
         { path: "/", element: <TimeLine /> },
@@ -49,12 +57,13 @@ export function Profile() {
                     encodeURI: dataURL
                 }));
             };
-
             reader.readAsDataURL(file);
         }
+        setPhoto(state => ({
+            ...state,
+            baseUrl: '/image/profile.jpg'
+        }));
     };
-
-    console.log(photo);
 
     return (
         <div className="theme-layout">
