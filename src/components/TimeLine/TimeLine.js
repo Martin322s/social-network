@@ -1,13 +1,24 @@
 import { Link } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
+import * as userService from "../../services/userService";
 
 export function TimeLine() {
+    const { user } = useContext(AuthContext);
+    const [userData, setUser] = useState({});
+
+    useEffect(() => {
+        userService.getUser(user._id)
+            .then(result => setUser(result));
+    }, [user._id]);
+
     return (
         <div className="col-lg-6">
             <div className="loadMore">
                 <div className="central-meta item">
                     <div className="new-postbox">
                         <figure>
-                            <img src="/images/resources/admin2.jpg" alt="profile" />
+                            <img src={userData?.imageUrl} alt="profile" />
                         </figure>
                         <div className="newpst-input">
                             <form>
@@ -28,7 +39,7 @@ export function TimeLine() {
                                         <li>
                                             <i className="fa fa-video-camera" />
                                             <label className="fileContainer" htmlFor="video">
-                                                <input type="file" id="video"/>
+                                                <input type="file" id="video" />
                                             </label>
                                         </li>
                                         <li>
