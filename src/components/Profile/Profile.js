@@ -20,12 +20,6 @@ export function Profile() {
         decodeURI: ''
     });
 
-    userService.updateUserPhoto(user._id, user.accessToken, { imageUrl: photo.encodeURI })
-        .then(result => setPhoto(state => ({
-            ...state,
-            decodeURI: decodeURIComponent(result)
-        })));
-
     const routes = useRoutes([
         { path: "/", element: <TimeLine /> },
         { path: "/timeline", element: <TimeLine /> },
@@ -42,17 +36,25 @@ export function Profile() {
 
         if (file) {
             const reader = new FileReader();
-            reader.onload = (e) => {
-                const contents = e.target.result;
-                const encodedString = encodeURIComponent(contents);
+
+            reader.onload = () => {
+                const dataURL = reader.result;
+                userService.updateUserPhoto(user._id, user.accessToken, { imageUrl: dataURL })
+                .then(result => setPhoto(state => ({
+                    ...state,
+                    decodeURI: result.imageUrl
+                })));
                 setPhoto(state => ({
                     ...state,
-                    encodeURI: encodedString
+                    encodeURI: dataURL
                 }));
             };
+
             reader.readAsDataURL(file);
         }
-    }
+    };
+
+    console.log(photo);
 
     return (
         <div className="theme-layout">

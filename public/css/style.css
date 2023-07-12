@@ -589,12 +589,12 @@ iframe {
     margin-top: -168px;
     overflow: hidden;
     position: relative;
-    width: 220px;
+    width: 260px;
 }
 
 .user-avatar > figure > img {
-    width: 220px;
-    height:200px;
+    width: 260px;
+    height:240px;
 }
 
 .user-avatar > figure {
