@@ -32,8 +32,6 @@ export function Profile() {
 
     const changeHandler = (ev) => {
         const file = ev.target.files[0];
-        console.log(ev.target.files);
-        console.log(encodeURIComponent(file));
 
         if (file) {
             const reader = new FileReader();
