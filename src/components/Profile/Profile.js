@@ -114,8 +114,8 @@ export function Profile() {
                                 <div className="timeline-info">
                                     <ul>
                                         <li className="admin-name">
-                                            <h5>Janice Griffith</h5>
-                                            <span>Group Admin</span>
+                                            <h5>{`${userData.firstName} ${userData.lastName}`}</h5>
+                                            <span>{userData.email}</span>
                                         </li>
                                         <li>
                                             <Link to="/profile/timeline">
