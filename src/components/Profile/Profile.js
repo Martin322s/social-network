@@ -7,11 +7,17 @@ import { Shortcuts } from "../Shortcuts/Shortcuts";
 import { ChangePassword } from "../Change Password/ChangePassword";
 import { EditProfile } from "../Edit Profile/EditProfile";
 import { Messages } from "../Messages/Messages";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 
 export function Profile() {
     const { user } = useContext(AuthContext);
+
+    const [photo, setPhoto] = useState({
+        baseUrl: '/images/profile.jpg',
+        encodeURI: '',
+        decodeURI: ''
+    });
 
     const routes = useRoutes([
         { path: "/", element: <TimeLine /> },
@@ -22,7 +28,31 @@ export function Profile() {
         { path: "/password", element: <ChangePassword /> },
         { path: "/edit", element: <EditProfile /> },
         { path: "/messages-inbox", element: <Messages /> }
-    ])
+    ]);
+
+    const changeHandler = (ev) => {
+        const file = ev.target.files[0];
+        console.log(ev.target.files);
+        console.log(encodeURIComponent(file));
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const contents = e.target.result;
+                const encodedString = encodeURIComponent(contents);
+                setPhoto(state => ({
+                    ...state,
+                    encodeURI: encodedString
+                }));
+                setPhoto(state => ({
+                    ...state,
+                    decodeURI: decodeURIComponent(encodedString)
+                }));
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+
     return (
         <div className="theme-layout">
             <section>
@@ -48,12 +78,17 @@ export function Profile() {
                             <div className="col-lg-2 col-sm-3">
                                 <div className="user-avatar">
                                     <figure>
-                                        <img src="/images/resources/user-avatar.jpg" alt="cover" />
-                                        <form className="edit-phto">
+                                        <img src={photo.decodeURI || photo.baseUrl} alt="cover" />
+                                        <form
+                                            className="edit-phto"
+                                        >
                                             <i className="fa fa-camera-retro" />
                                             <label className="fileContainer">
                                                 Edit Display Photo
-                                                <input type="file" />
+                                                <input
+                                                    type="file"
+                                                    onChange={(ev) => changeHandler(ev)}
+                                                />
                                             </label>
                                         </form>
                                     </figure>
