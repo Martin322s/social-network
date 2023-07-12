@@ -9,6 +9,7 @@ import { EditProfile } from "../Edit Profile/EditProfile";
 import { Messages } from "../Messages/Messages";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
+import * as userService from "../../services/userService";
 
 export function Profile() {
     const { user } = useContext(AuthContext);
@@ -18,6 +19,16 @@ export function Profile() {
         encodeURI: '',
         decodeURI: ''
     });
+
+    const submitHandler = (ev) => {
+        ev.preventDefault();
+        
+        userService.updateUserPhoto(user._id, user.accessToken, photo, encodeURI)
+            .then(result => setPhoto(state => ({
+                ...state,
+                decodeURI: decodeURIComponent(result)
+            })));
+    }
 
     const routes = useRoutes([
         { path: "/", element: <TimeLine /> },
@@ -41,10 +52,6 @@ export function Profile() {
                 setPhoto(state => ({
                     ...state,
                     encodeURI: encodedString
-                }));
-                setPhoto(state => ({
-                    ...state,
-                    decodeURI: decodeURIComponent(encodedString)
                 }));
             };
             reader.readAsDataURL(file);
@@ -79,15 +86,16 @@ export function Profile() {
                                         <img src={photo.decodeURI || photo.baseUrl} alt="cover" />
                                         <form
                                             className="edit-phto"
+                                            onSubmit={(ev) => submitHandler(ev)}
                                         >
                                             <i className="fa fa-camera-retro" />
-                                            <label className="fileContainer">
+                                            <button className="fileContainer" type="submit">
                                                 Edit Display Photo
                                                 <input
                                                     type="file"
                                                     onChange={(ev) => changeHandler(ev)}
                                                 />
-                                            </label>
+                                            </button>
                                         </form>
                                     </figure>
                                 </div>

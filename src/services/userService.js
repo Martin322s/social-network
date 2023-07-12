@@ -86,7 +86,7 @@ export const updateUserPhoto = async (userId, token, photoString) => {
     const res = await fetch(`${baseUrl}/update/profile/${userId}`, {
         method: "PATCH",
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify(photoString)
     });
