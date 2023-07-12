@@ -92,5 +92,5 @@ export const updateUserPhoto = async (userId, token, photoString) => {
         body: JSON.stringify(photoString)
     });
 
-    return res.json();
+    return res?.json();
 }

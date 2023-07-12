@@ -7,7 +7,7 @@ import { Shortcuts } from "../Shortcuts/Shortcuts";
 import { ChangePassword } from "../Change Password/ChangePassword";
 import { EditProfile } from "../Edit Profile/EditProfile";
 import { Messages } from "../Messages/Messages";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import * as userService from "../../services/userService";
 
@@ -20,15 +20,13 @@ export function Profile() {
         decodeURI: ''
     });
 
-    const submitHandler = (ev) => {
-        ev.preventDefault();
-        
-        userService.updateUserPhoto(user._id, user.accessToken, photo, encodeURI)
+    useEffect(() => {
+        userService.updateUserPhoto(user._id, user.accessToken, { imageUrl: photo.encodeURI })
             .then(result => setPhoto(state => ({
                 ...state,
                 decodeURI: decodeURIComponent(result)
             })));
-    }
+    }, [photo.encodeURI, user._id, user.accessToken])
 
     const routes = useRoutes([
         { path: "/", element: <TimeLine /> },
@@ -86,16 +84,16 @@ export function Profile() {
                                         <img src={photo.decodeURI || photo.baseUrl} alt="cover" />
                                         <form
                                             className="edit-phto"
-                                            onSubmit={(ev) => submitHandler(ev)}
                                         >
                                             <i className="fa fa-camera-retro" />
-                                            <button className="fileContainer" type="submit">
+                                            <label className="fileContainer">
                                                 Edit Display Photo
                                                 <input
                                                     type="file"
                                                     onChange={(ev) => changeHandler(ev)}
                                                 />
-                                            </button>
+                                            </label>
+                                            <input type="submit" value="Update" />
                                         </form>
                                     </figure>
                                 </div>
