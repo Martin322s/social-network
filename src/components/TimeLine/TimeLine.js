@@ -1,11 +1,42 @@
 import { Link } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useReducer, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import * as userService from "../../services/userService";
+import { initialValue, reducer } from "./data/data";
 
 export function TimeLine() {
     const { user } = useContext(AuthContext);
     const [userData, setUser] = useState({});
+
+    const [state, dispatch] = useReducer(reducer, initialValue);
+
+    const changeHandler = (ev) => {
+        if (ev.target.type === "textarea") {
+            dispatch(
+                {
+                    type: "SET_FIELD",
+                    field: ev.target.name,
+                    value: ev.target.value
+                }
+            )
+        } else {
+            const file = ev.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const dataURL = reader.result;
+                    dispatch({ type: "SET_FIELD", field: "file", value: dataURL });
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+    };
+
+    const submitHandler = (ev, data) => {
+        ev.preventDefault();
+        console.log(data);
+    }
 
     useEffect(() => {
         userService.getUser(user._id)
@@ -21,25 +52,25 @@ export function TimeLine() {
                             <img src={userData?.imageUrl} alt="profile" />
                         </figure>
                         <div className="newpst-input">
-                            <form>
+                            <form onSubmit={(ev) => submitHandler(ev, state)}>
                                 <textarea
                                     rows={2}
-                                    placeholder="write something"
-                                    defaultValue={""}
                                     name="opinion"
+                                    placeholder="write something"
+                                    value={state.opinion}
+                                    onChange={(ev) => changeHandler(ev)}
                                 />
                                 <div className="attachments">
                                     <ul>
                                         <li>
                                             <i className="fa fa-image" />
                                             <label className="fileContainer" htmlFor="file">
-                                                <input type="file" id="file" />
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-video-camera" />
-                                            <label className="fileContainer" htmlFor="video">
-                                                <input type="file" id="video" />
+                                                <input
+                                                    type="file"
+                                                    id="file"
+                                                    name="file"
+                                                    onChange={(ev) => changeHandler(ev)}
+                                                />
                                             </label>
                                         </li>
                                         <li>
