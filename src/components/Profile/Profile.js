@@ -13,6 +13,7 @@ import * as userService from "../../services/userService";
 
 export function Profile() {
     const { user } = useContext(AuthContext);
+    const [userData, setUser] = useState({});
 
     const [photo, setPhoto] = useState({
         baseUrl: '/images/profile.jpg',
@@ -22,10 +23,13 @@ export function Profile() {
 
     useEffect(() => {
         userService.getUser(user._id)
-            .then(result => setPhoto(state => ({
-                ...state,
-                decodeURI: result.imageUrl
-            })));
+            .then(result => {
+                setPhoto(state => ({
+                    ...state,
+                    decodeURI: result.imageUrl
+                }));
+                setUser(result);
+            });
     }, [user._id, photo.encodeURI, photo.decodeURI, photo]);
 
     const routes = useRoutes([
@@ -48,10 +52,10 @@ export function Profile() {
             reader.onload = () => {
                 const dataURL = reader.result;
                 userService.updateUserPhoto(user._id, user.accessToken, { imageUrl: dataURL })
-                .then(result => setPhoto(state => ({
-                    ...state,
-                    decodeURI: result.imageUrl
-                })));
+                    .then(result => setPhoto(state => ({
+                        ...state,
+                        decodeURI: result.imageUrl
+                    })));
                 setPhoto(state => ({
                     ...state,
                     encodeURI: dataURL
@@ -73,7 +77,7 @@ export function Profile() {
                         <img src="/images/resources/timeline-1.jpg" alt="profile" />
                     </figure>
                     <div className="add-btn">
-                        <span>1205 followers</span>
+                        <span>{userData.friends.length} followers</span>
                         <Link to="/">
                             Add Friend
                         </Link>
