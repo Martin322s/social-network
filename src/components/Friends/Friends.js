@@ -31,7 +31,7 @@ export function Friends() {
                     </div>
                 </div>
                 <div className="widget friend-list stick-widget">
-                    <h4 className="widget-title">Last 8 recently added friends:</h4>
+                    <h4 className="widget-title">Last recently added friends:</h4>
                     <div id="searchDir" />
                     <ul id="people-list" className="friendz-list">
                         <li>
