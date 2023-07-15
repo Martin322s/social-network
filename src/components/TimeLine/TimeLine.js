@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext, useEffect, useReducer, useState } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import * as userService from "../../services/userService";
@@ -8,6 +8,7 @@ import { initialValue, reducer } from "./data/data";
 export function TimeLine() {
     const { user } = useContext(AuthContext);
     const [userData, setUser] = useState({});
+    const navigate = useNavigate();
 
     const [state, dispatch] = useReducer(reducer, initialValue);
 
@@ -38,7 +39,7 @@ export function TimeLine() {
         ev.preventDefault();
         
         postService.create(user.accessToken, data, user._id)
-            .then(result => console.log(result));
+            .then(result => navigate('/profile/timeline'));
     }
 
     useEffect(() => {
