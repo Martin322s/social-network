@@ -8,10 +8,15 @@ import { initialValue, reducer } from "./data/data";
 export function TimeLine() {
     const { user } = useContext(AuthContext);
     const [userData, setUser] = useState({});
+    const [posts, setPosts] = useState([]);
     const navigate = useNavigate();
 
     const [state, dispatch] = useReducer(reducer, initialValue);
 
+    useEffect(() => {
+        postService.getAll().then(result => setPosts(result));
+    }, []);
+    
     const changeHandler = (ev) => {
         if (ev.target.type === "textarea") {
             dispatch(
@@ -39,13 +44,14 @@ export function TimeLine() {
         ev.preventDefault();
         
         postService.create(user.accessToken, data, user._id)
-            .then(result => navigate('/profile/timeline'));
+            .then(() => navigate('/profile/timeline'));
     }
 
     useEffect(() => {
-        userService.getUser(user._id)
-            .then(result => setUser(result));
+        userService.getUser(user._id).then(result => setUser(result));
     }, [user._id]);
+
+    console.log(posts);
 
     return (
         <div className="col-lg-6">

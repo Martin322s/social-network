@@ -12,3 +12,5 @@ export const create = async (token, data, userId) => {
 
     return res.json();
 };
+
+export const getAll = async () => await fetch(`${baseUrl}/all`).then(res => res.json());
