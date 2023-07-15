@@ -37,7 +37,7 @@ export function TimeLine() {
     const submitHandler = (ev, data) => {
         ev.preventDefault();
         
-        postService.create(user.accessToken, data)
+        postService.create(user.accessToken, data, user._id)
             .then(result => console.log(result));
     }
 
