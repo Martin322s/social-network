@@ -48,7 +48,7 @@ export function TimeLine() {
     }
 
     useEffect(() => {
-        userService.getUser(user._id).then(result => setUser(result));
+        userService.getUser(user?._id).then(result => setUser(result));
     }, [user._id]);
 
     console.log(posts);

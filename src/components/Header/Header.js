@@ -1,18 +1,7 @@
 import { Link } from "react-router-dom";
 import "./styles/header.css";
-import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../contexts/AuthContext";
-import * as userService from "../../services/userService";
 
 export function Header() {
-    const { user } = useContext(AuthContext);
-    const [userData, setUser] = useState({});
-
-    useEffect(() => {
-        userService.getUser(user._id)
-            .then(result => setUser(result));
-    }, [user._id]);
-
     return (
         <header>
             <nav>
@@ -40,11 +29,6 @@ export function Header() {
                                     </div>
                                 </li>
                             </ul>
-                            <div className="user-img">
-                                <Link to="/profile/timeline">
-                                    <img src={userData?.imageUrl} alt="profile" />
-                                </Link>
-                            </div>
                         </div>
                     </div>
                 </div>
