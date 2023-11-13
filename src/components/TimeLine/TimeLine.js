@@ -51,8 +51,6 @@ export function TimeLine() {
         userService.getUser(user?._id).then(result => setUser(result));
     }, [user._id]);
 
-    console.log(posts);
-
     return (
         <div className="col-lg-6">
             <div className="loadMore">
