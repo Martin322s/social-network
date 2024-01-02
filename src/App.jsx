@@ -7,6 +7,7 @@ import TabPanel from "./components/TabPanel/TabPanel";
 import ChatBody from "./components/Chat Body/ChatBody";
 import InviteNewFriends from "./components/Invite New Friends/InviteNewFriends";
 import Options from "./components/Options/Options";
+import Login from "./components/Login/Login";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <div id="layout" className="theme-cyan">
             <Navigation />
             <Rightbar />
+            <Login />
             <div className="sidebar border-end py-xl-4 py-3 px-xl-4 px-3">
                 <div className="tab-content">
                     <Profile />
