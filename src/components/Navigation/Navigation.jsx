@@ -55,7 +55,6 @@ function Navigation() {
                 </a>
                 <a
                     className="mt-xl-3 mt-md-2 nav-link light-dark-toggle"
-                    href="/"
                 >
                     <i className="zmdi zmdi-brightness-2" />
                     <input className="light-dark-btn" type="checkbox" />
