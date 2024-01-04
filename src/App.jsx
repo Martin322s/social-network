@@ -24,6 +24,7 @@ function App() {
             {/* <ResetPassword /> */}
             <Navigation />
             <Rightbar />
+            <ChatBody />
             <div className="sidebar border-end py-xl-4 py-3 px-xl-4 px-3">
                 <div className="tab-content">
                     <Routes>
@@ -36,7 +37,8 @@ function App() {
                     <TabPanel />
                     <InviteNewFriends />
                     <Options />
-                    <ChatBody /> */}
+                     */}
+                    
                 </div>
             </div>
             {/* <Settings /> */}

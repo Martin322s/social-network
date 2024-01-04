@@ -7,7 +7,7 @@ function ChatBody() {
                         <div className="avatar lg avatar-bg me-auto ms-auto mb-5">
                             <img
                                 className="avatar lg rounded-circle border"
-                                src="assets/img/avatar5.png"
+                                src="/img/avatar5.png"
                                 alt=""
                             />
                             <span className="a-bg-1" />
