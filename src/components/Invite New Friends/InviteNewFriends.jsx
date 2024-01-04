@@ -16,7 +16,7 @@ function InviteNewFriends() {
                             data-dismiss="modal"
                             aria-label="Close"
                         >
-                            <span aria-hidden="true">×</span>
+                            <span aria-hidden="true">x</span>
                         </button>
                     </div>
                     <div className="modal-body">

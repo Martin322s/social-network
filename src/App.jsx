@@ -13,35 +13,41 @@ import Register from "./components/Register/Register";
 import ResetPassword from "./components/Reset Password/ResetPassword";
 import Settings from "./components/Settings/Settings";
 
-function App() {
-
+function SideBar() {
     return (
-        <div id="layout" className="theme-cyan">
-
-
-            {/* <Login /> */}
-            {/* <Register /> */}
-            {/* <ResetPassword /> */}
-            <Navigation />
-            <Rightbar />
-            <ChatBody />
-            <div className="sidebar border-end py-xl-4 py-3 px-xl-4 px-3">
-                <div className="tab-content">
-                    <Routes>
-                        <Route path="/" element={<RecentChats />} />
-                        <Route path="/profile" element={<Profile />} />
-                    </Routes>
-                    {/* 
+        <div className="sidebar border-end py-xl-4 py-3 px-xl-4 px-3">
+            <div className="tab-content">
+                <Routes>
+                    <Route path="/" element={<RecentChats />} />
+                    <Route path="/settings" element={<Profile />} />
+                </Routes>
+                {/* 
                     <RecentChats />
                     <PhoneCalls />
                     <TabPanel />
                     <InviteNewFriends />
                     <Options />
                      */}
-                    
-                </div>
+
             </div>
-            {/* <Settings /> */}
+        </div>
+    );
+}
+
+function App() {
+
+    return (
+        <div id="layout" className="theme-cyan">
+            {/* <ResetPassword /> */}
+            <Navigation />
+            <Rightbar />
+            <Routes>
+                <Route path="/" element={<ChatBody />} />
+                <Route path="/settings" element={<Settings />}></Route>
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+            </Routes>
+            <SideBar />
         </div>
     );
 }
