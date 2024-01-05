@@ -19,7 +19,7 @@ function SideBar() {
             <div className="tab-content">
                 <Routes>
                     <Route path="/" element={<RecentChats />} />
-                    <Route path="/settings" element={<Profile />} />
+                    <Route path="/profile" element={<Profile />} />
                 </Routes>
                 {/* 
                     <RecentChats />
@@ -46,6 +46,7 @@ function App() {
                 <Route path="/settings" element={<Settings />}></Route>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/profile" element={<Profile />} />
             </Routes>
             <SideBar />
         </div>
